@@ -145,3 +145,27 @@ background-color: #FF6600
 .private-sharing-button--email:hover {
   background-color: #5e5e5e
 }
+
+.question {
+  color: #113055;
+  text-decoration: none;
+  font-family: Verdana;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.regLink {
+  color: #113055;
+  text-decoration: none;
+  font-family: Verdana;
+  font-size: 12px; font-weight: bold;
+  line-height: 12px;
+}
+
+H2 {
+  color: #00446D;
+  text-decoration: none;
+  font-family: Verdana;
+  font-size: 14px; font-weight: bold;
+}
