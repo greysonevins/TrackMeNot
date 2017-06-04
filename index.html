@@ -16,21 +16,20 @@
 <link rel="icon" type="image/png" href="tmn_icon.png" />
 <script type="text/javascript">
 function callback() {
-    var userLang = navigator.language || navigator.userLanguage;
-    if (userLang == "fr") {
-        window.location.href = "http://cs.nyu.edu/trackmenot/fr"
-    }
-  	else if (userLang.indexOf("zh") == 0) {
-        window.location.href = "http://cs.nyu.edu/trackmenot/ch"
-    }
-   }
+  var userLang = navigator.language || navigator.userLanguage;
+  if (userLang == "fr") {
+    window.location.href = "http://cs.nyu.edu/trackmenot/index-fr.html";
+  } else if (userLang.indexOf("zh") == 0) {
+    window.location.href = "http://cs.nyu.edu/trackmenot/index-zh.html";
+  }
+}
 if (document.readyState === "complete" ||
-    (document.readyState !== "loading" && !document.documentElement.doScroll)) {
+  (document.readyState !== "loading" && !document.documentElement.doScroll)
+) {
   callback();
 } else {
   document.addEventListener("DOMContentLoaded", callback);
 }
-
 </script>
 </head>
 
@@ -89,7 +88,6 @@ href="http://cs.nyu.edu/trackmenot/xpi/trackmenot-0.10.0a-fx.xpi" title="Install
         </td>
       </tr>
 
-
 		</table>
 		</td>
 	</tr>
@@ -100,8 +98,7 @@ href="http://cs.nyu.edu/trackmenot/xpi/trackmenot-0.10.0a-fx.xpi" title="Install
         <td bgcolor=#D6E0E0 width=220><!--144 adjuster -->
           <b><br><a href="#how" class=linkList>&nbsp;&nbsp;&diams; How It
 Works</a><br><a href="#why" class=linkList>&nbsp;&nbsp;&diams; Why We Created
-TMN</a><!--br><a href="#bg" class=linkList>&nbsp;&nbsp;&diams;
-Background</a--><br><a href="faq.html" class=linkList>&nbsp;&nbsp;&diams;
+TMN</a><br><a href="faq.html" class=linkList>&nbsp;&nbsp;&diams;
 Installation / Help</a>
 <br><!--a href="#version" class=linkList>&nbsp;&nbsp;&diams; New 0.8
 Features!</a><br-->
@@ -333,18 +330,16 @@ the New Surveillance," Journal of Social Issues, Vol 59, No. 2, 2003,
 
 </center>
 <script>
-  // show download button according to the browser
-  // default : Firefox
-  var isChrome = !!window.chrome && !!window.chrome.webstore;
-  if (isChrome) {
-    document.getElementById("firefoxbutton").style.display = 'none';
-    document.getElementById("chromelink").style.display = 'none';
-  } else {
-    document.getElementById("chromebutton").style.display = 'none';
-    document.getElementById("firefoxlink").style.display = 'none';
-
-  }
-
+// show download button according to the browser
+// default : Firefox
+var isChrome = !!window.chrome && !!window.chrome.webstore;
+if (isChrome) {
+  document.getElementById("firefoxbutton").style.display = "none";
+  document.getElementById("chromelink").style.display = "none";
+} else {
+  document.getElementById("chromebutton").style.display = "none";
+  document.getElementById("firefoxlink").style.display = "none";
+}
 </script>
 </body>
 </html>
