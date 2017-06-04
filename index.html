@@ -155,13 +155,14 @@ background-color: #FF6600
 function callback() {
   var userLang = navigator.language || navigator.userLanguage;
   if (userLang == "fr") {
-    window.location.href = "http://cs.nyu.edu/trackmenot/fr";
+    window.location.href = "http://cs.nyu.edu/trackmenot/index-fr.html";
   } else if (userLang.indexOf("zh") == 0) {
-    window.location.href = "http://cs.nyu.edu/trackmenot/zh";
+    window.location.href = "http://cs.nyu.edu/trackmenot/index-zh.html";
   }
 }
-var doc = document, rs = doc.readyState;
-if (rs==="complete" || (rs !== "loading" && !doc.documentElement.doScroll)) {
+if (document.readyState === "complete" ||
+  (document.readyState !== "loading" && !document.documentElement.doScroll)
+) {
   callback();
 } else {
   doc.addEventListener("DOMContentLoaded", callback);
@@ -230,7 +231,6 @@ href="http://cs.nyu.edu/trackmenot/xpi/trackmenot-0.10.0a-fx.xpi" title="Install
         </td>
       </tr>
 
-
 		</table>
 		</td>
 	</tr>
@@ -241,8 +241,7 @@ href="http://cs.nyu.edu/trackmenot/xpi/trackmenot-0.10.0a-fx.xpi" title="Install
         <td bgcolor=#D6E0E0 width=220><!--144 adjuster -->
           <b><br><a href="#how" class=linkList>&nbsp;&nbsp;&diams; How It
 Works</a><br><a href="#why" class=linkList>&nbsp;&nbsp;&diams; Why We Created
-TMN</a><!--br><a href="#bg" class=linkList>&nbsp;&nbsp;&diams;
-Background</a--><br><a href="faq.html" class=linkList>&nbsp;&nbsp;&diams;
+TMN</a><br><a href="faq.html" class=linkList>&nbsp;&nbsp;&diams;
 Installation / Help</a>
 <br><!--a href="#version" class=linkList>&nbsp;&nbsp;&diams; New 0.8
 Features!</a><br-->
