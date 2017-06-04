@@ -1,0 +1,635 @@
+
+<HTML>
+<HEAD>
+<TITLE>TrackMeNot FAQ</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META name="description" content="TrackMeNot FAQ">
+<META http-equiv="pragma" content="no-cache">
+<META name="revisit-after" content="1 days">
+<META name="language" content="en">
+<META name="author" content="Daniel C. Howe">
+<META name="page-topic" content="TrackMeNot">
+<META name="page-type" content="TrackMeNot">
+<META name="audience" content="All">
+<META name="robots" content="INDEX,FOLLOW">
+<META name="keywords" content="trackmenot, download, firefox, extensions, values in design, extension, privacy, surveillance, security, search, daniel, daniel howe, daniel c. howe, daniel c howe, howe, canazon, helen, nissenbaum, helen nissenbaum, hfn1, mrl, nyu, values, design, applet, media research lab">
+<style type="text/css">
+.regLink {
+  color: #113055;
+  text-decoration: none;
+  font-family: Verdana;
+  font-size: 12px; font-weight: bold;
+  line-height: 12px;
+}
+.linkList {
+  color: #006ec4;
+  text-decoration: none;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 11.5px;
+  line-height: 22px;
+}
+.link {
+  color: #006ec4;
+  text-decoration: none;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.smLink {
+  color: #006ec4;
+  text-decoration: none;
+  font-family: Verdana;
+  font-size: 10px;
+  font-weight: bold;
+}
+.question {
+  color: #113055;
+  text-decoration: none;
+  font-family: Verdana;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: bold;
+}
+H1 {
+  color: #00446D;
+  text-decoration: none;
+  font-family: Verdana;
+  font-size: 16px; font-weight: bold;
+  line-height: 13px;
+}
+H2 {
+  color: #00446D;
+  text-decoration: none;
+  font-family: Verdana;
+  font-size: 14px; font-weight: bold;
+}
+
+H3 {
+  color: #00446D;
+  text-decoration: none;
+  font-family: Verdana;
+  font-size: 13px; font-weight: bold;
+}
+
+A:hover {
+  color: #ff5500;
+  text-decoration: none;
+}
+DIV.block {text-align:justify}
+</style>
+</HEAD>
+
+<BODY BGCOLOR=#FFFFFF LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0>
+<center>
+
+
+<!-- HEADER =============================================== -->
+<TABLE Width=800 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+        <TD COLSPAN=2 ROWSPAN=2 bgcolor=#E6EAE2>
+            <IMG SRC="images/TMN_logo.gif" WIDTH=234 HEIGHT=206 ALT=""></TD>
+        <TD COLSPAN=2 bgcolor=#E6EAE2>
+            <IMG SRC="images/TMN_header.gif" WIDTH=362 HEIGHT=52 ALT=""></TD>
+        <TD ROWSPAN=2 bgcolor=#E6EAE2><!-- right margin -->
+            <IMG SRC="images/spacer.gif" WIDTH=197 HEIGHT=128 ALT="">
+		    </TD>
+    </TR>
+     <TR>
+        <TD bgcolor=#E6EAE2 valign=top >
+          <font face=verdana size=4 color=#00446D><b>Help / Frequently Asked Questions</b></font>
+        </TD>
+     </TR>
+</TABLE>
+
+<!-- QUESTION LIST =============================================== -->
+<TABLE WIDTH=800 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+ <TR>
+   <TD bgcolor=#ffffff align=left>
+      <IMG SRC="images/spacer.gif" WIDTH=30 ALT="">
+		</TD>
+   <TD bgcolor=#E6EAE2 valign=top>
+
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0>
+    <TR>
+        <TD width=60>&nbsp;</TD>
+        <TD bgcolor=#E6EAE2>
+
+<ul>
+<li><a href="#install" class=question>How do I install
+TrackMeNot?</a>
+
+<li><a href="#upgrade" class=question>How do I upgrade to the
+current version of TrackMeNot?</a>
+
+<li><a href="#remove" class=question>How do I remove
+TrackMeNot?</a>
+
+<li><a href="#options" class=question>Can you help me understand all the
+different TMN Options?</a>
+
+<li><a href="#features" class=question>Can you help me understand the new TMN features in version 'X'?</a>
+
+<li><a href="#freq" class=question>Can I control the rate at
+which TMN sends queries? </a>
+
+<li><a href="#engines" class=question>Can I choose the search
+engines that TMN queries?</a>
+
+<li><a href="#terms" class=question>Can I control the search
+terms that TMN uses?</a>
+
+<li><a href="#filter" class=question>Isn't it easy for search
+companies (or third parties) to filter out TMN
+queries?</a>
+
+<li><a href="#identity" class=question>Can effectively TMN hide my
+identity?</a>
+
+<li><a href="#mining" class=question>Can TMN prevent mining
+and profiling of my searches?</a>
+
+<li><a href="#history" class=question>Isn't it a good thing
+that search companies keep track of my search
+history?</a>
+
+<li><a href="#control" class=question>Why is TMN so concerned
+with keeping control in the hands of individual users; as opposed to other
+strategies which use 3rd party servers/proxies?</a>
+
+<li><a href="#terrorists" class=question>Won't software like this
+make it harder for the government
+to catch real criminals (or terrorists) who might be using
+the web for nefarious purposes?</a>
+
+<li><a href="#clog" class=question>Will widespread
+deployment of TMN eventually 'clog' the search
+engines it queries? </a>
+
+<li><a href="#click" class=question>Does TMN ever simulate
+click-throughs on links that come up from "fake"
+searches. If not, why not? Further, couldn't a search engine just look at any
+searches for which a result is clicked on and know that these are the 'real'
+searches? </a>
+
+<li><a href="#guarantee" class=question>What kind of guarantees
+can TMN make regarding its effectiveness at
+protecting my privacy? </a>
+
+<li><a href="#feedback" class=question>If one of the search
+engines were to come up with a new technical mechanism that
+could defeat TMN, how would you even know? </a>
+
+<li><a href="#random" class=question>How random is TMN's
+random timing mechanism. Isn't it likely that a search
+engine (using the massive amount of user data they've already collected) could
+distinguish 'any' random mechanism from real user search behavior? </a>
+
+<li><a href="#ddos" class=question>How is this different than a (Distributed) Denial
+of Service attack or spamware? </a>
+
+<li><a href="#clickfraud" class=question>Does the selective click-through feature contribute to advertising "click-fraud"? </a>
+
+<li><a href="#response" class=question>How have the search
+engine companies responded to this project? </a>
+
+<li><a href="#schneier" class=question>I read Bruce Schneier's
+review that said TrackMeNot doesn't work; is he
+right? </a>
+
+<li><a href="#browsers" class=question>I would love to use
+TrackMeNot; why doesn't it work with browsers other
+than Firefox? </a>
+
+<li><a href="#lang" class=question>I would love to use
+TrackMeNot; why doesn't it work for languages besides
+English? </a>
+
+<li><a href="#tor" class=question>There are several
+projects that claim to protect privacy in web search
+(e.g., Tor, Anonymizer, etc.) Which is most effective -- should I use TMN
+instead of these others? </a>
+
+<li><a href="#captcha" class=question>
+Google sends me to a 'sorry' page and tells me that it suspects my machine of
+being infected with spyware or a virus, and even prompts me for a captcha when
+I try to search. Did the search engine detect TrackMeNot?</a>
+</ul>
+</TD>
+<!-- right margin -->
+<TD width=90>&nbsp;</TD>
+</TR>
+</TABLE>
+
+		</TD>
+  </TR>
+</TABLE>
+
+<!-- ANSWERS ======================================================= -->
+<TABLE Width=800 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+<TR>
+         <TD bgcolor=#ffffff><IMG SRC="images/spacer.gif" WIDTH=30></TD>
+         <TD bgcolor=#E6EAE2><IMG SRC="images/spacer.gif" WIDTH=85></TD>
+         <TD bgcolor=#E6EAE2>
+<br>
+<IMG SRC="images/hr_rule.gif" ALT=""><br>
+<font face=verdana size=2>
+
+<a name="install"></a>
+<h2>How do I install TrackMeNot?</h2>
+<ul><li><a href="http://www.mozilla.com/firefox/" targer=_blank
+class=regLink>Install or upgrade Firefox</a> if necessary - TMN runs in
+version 1.5 or
+greater.
+<li>Click the 'Install TrackMeNot' link
+<li>Click 'Install' in the dialog, (you may need to instruct Firefox to
+accept downloads from mrl.nyu.edu; then Restart Firefox.
+<li>You should now see the TMN icon in the status bar (bottom right-hand
+corner of the browser window). It will indicate "Off".
+<li>To start TMN, click 'TrackMeNot' in the Firefox 'Tools' menu. This will
+change TMN's status to "On". After a few seconds you will see queries
+start to appear in the status bar. <br>[Note: TMN requests are sent to search
+engines just like 'real' requests, and so will end up in any history
+kept by the site, e.g., Google's 'search-history' function]<Br>
+<li>To disable display of queries in the status bar, view the query log, or to
+adjust other options, select 'TrackMeNot->Options' in the Firefox 'Tools'
+menu.
+<li>To turn TMN off, locate 'TrackMeNot->Enabled' in the Firefox 'Tools' menu
+& uncheck it.</ul>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
+
+<a name="upgrade"></a>
+<h2>How do I upgrade to the current version of TrackMeNot?</h2>
+<ul>
+<li> Firefox's extension manager will alert you when TrackMeNot is updated,
+and prompt you to install the upgrade.
+<li>If you've disabled this function or want to do a manual upgrade,
+simply follow the install instructions above.</ul>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
+
+<a name="remove"></a>
+<h2>How do I remove TrackMeNot?</h2>
+<ul><li>To remove TrackMeNot from your system, click
+ 'Tools->Extensions' in the Firefox menu and launch the
+extension manager.
+<li>Select TrackMeNot from the list of installed extensions,
+then click the 'Uninstall' button.
+<li>Restart Firefox to complete the uninstall.</ul>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
+
+<a name="freq"></a>
+<h2>Can I control the rate at which TMN sends queries? </h2>
+Yes. Go to 'Tools->TrackMeNot->Options' and select an average frequency.
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
+
+
+<a name="engines"></a>
+<h2>Can I choose the search engines that TMN queries?</h2>
+Yes. Go to 'Tools->TrackMeNot->Search-Engines' and select one or more
+search-engines to query.
+<p>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
+
+<a name="terms"></a>
+<h2>Can I control the search terms that TMN uses?</h2>
+
+Yes, but not directly. TMN currently uses RSS feeds to generate its initial
+set of queries. This listed can be edited, in the options panel
+('Tools->Options->RSS Feeds'), by typing or pasting in the new
+(comma-delimited) list, then pushing the validate button.
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
+
+<a name="filter"></a>
+<h2>Isn't it easy for search companies (or third parties) to filter out TMN
+queries?</h2>
+The answer here is not straightforward; even with dynamically
+evolving query sets and burst-mode timing, there are data-mining and machine-learning techniques which may well be able to filter some TMN queries based on data
+patterns obtained from actual users. However, with the combination of
+randomized scheduling and query lengths, inclusion of changing terms from RSS
+feeds, and evolving query sets, we believe the difficulty for 3rd parties wishing to aggregate such data into accurate or identifying profiles is significantly
+increased.
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="index.html" class=regLink>
+Back to main page</a><br>&nbsp;<br>
+
+<a name="identity"></a>
+<h2>Can TMN effectively hide my identity?</h2>
+To the extent that a third-party tries to identify you through searches
+alone, TMN can potentially make this a lot more difficult. Much depends on the
+search query terms included in future versions of TMN. If third-parties are using other means to identify you, e.g. through IP addresses and information from your ISP, TMN will be of little use.
+<p>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
+
+<a name="mining"></a>
+<h2>Can TMN prevent mining and profiling of my searches?</h2>
+This is a potentially promising application of TMN, particularly with version
+0.4.x's use of dynamically evolving query terms.<p>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
+
+<a name="history"></a>
+<h2>Isn't it a good thing that search companies keep track of my search
+history?</h2>
+In a perfect world, where search companies and other third parties could be
+trusted, such histories would serve all of us well and promise greater
+functionality to both the companies and individual searchers. As long as
+search companies and other information collectors unilaterally develop and
+pursue policies that don't take seriously the interests of individuals,
+society, and standing political and social values, individuals will have to
+make a choice between convenience and privacy.
+<p>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
+
+
+<a name="control"></a>
+<h2>Why is TMN so concerned with keeping control in the hands of individual users; as opposed to other strategies which use 3rd party servers/proxies?</h2>
+The larger intention of TMN is to challenge the current practice of search
+companies, and other third-parties, of unilaterally setting  policies on the
+collection and use of personal information.
+We think users should have a say; we think search
+companies should listen. To level the playing field, we have sought to create
+a mechanism that places some degree of control back in the hands of users and,
+at every point in the design where this has been feasible, we have sought to
+do so.
+<p>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
+
+
+<a name="terrorists"></a>
+<h2>Won't software like this make it harder for the government
+to catch real criminals (or terrorists) who might be using
+the web for nefarious purposes?</h2>
+
+We are unaware of any instances in which the analysis of search queries has helped law enforcement or security agencies deter or prosecute criminals or
+terrorists.  Constitutional principles, however, place limits on what the government can and cannot do in such investigations. A targeted search on a particular
+individual's online activities (once probable cause has been demonstrated) is
+unlikely to be affected. TMN may, however, make unconstitutional 'fishing expeditions' more difficult, which is consistent with the values of a free society.
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
+
+<a name="clog"></a>
+<h2>Will widespread deployment of TMN eventually 'clog' the search
+engines it queries? </h2>
+TMN no doubt places some  additional load on search engines (though TMN requests are tiny compared with other types of web-traffic --  e.g. images, animations,
+music, video, etc.).  How much and how serious the impact will depend on the
+number of users and their use patterns.  Our intention (and expectation) with
+TMN is that its effect on search engines be minimal.  Further, universal
+deployment of TMN is not a  goal of the project. Rather, we hope to offer a
+level of  protection to individuals who may feel threatened by the practices
+of search engines, and perhaps even to afford such users a small voice in the emerging debate on such practices.
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
+
+<a name="click"></a>
+<h2> Does TMN ever simulate click-throughs on links that come up from "fake"
+searches? </h2>
+
+TMN now selectively "clicks-through" on links available in simulated searches.  The click-through algorithm is designed to minimize the possibility of
+clicking on revenue-generating ads to avoid impacting ad-based business practices.
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
+
+<a name="guarantee"></a>
+<h2> What kind of guarantees can TMN make regarding its effectiveness at
+protecting my privacy? </h2>
+
+We can make no guarantees without further evaluation measures, however, we believe that search companies may need to go to considerable trouble to separate user-generated from TMN-generated searches. Further, any such filtering efforts are likely to contain some number of 'false-positives'.
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
+<a name="feedback"></a>
+<h2> If one of the search engines were to come up with a new technical mechanism that
+could defeat TMN, how would you even know? </h2>
+
+There have been changes to which we have been able to respond, but there may
+be current or future mechanisms of which we are unaware and hence not
+able to respond to.
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
+
+<a name="random"></a>
+<h2> How random is TMN's random timing mechanism. Isn't it likely that a search
+engine (using the massive amount of user data they've already collected) could
+distinguish 'any' random mechanism from real user search behavior? </h2>
+
+With sufficient time and resources, search companies could likely detect a
+majority of TMN searches with some certainty. We are continuously improving
+TMNs timing mechanism to mimic, more closely, real usage patterns. New
+releases of TMN (> v05) contain a 'burst' mechanism which schedules TMN
+queries primarily when users are actually searching, thus avoiding 'patterns' in
+TMN's randomness.
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
+
+<a name="ddos"></a>
+<h2> How is this different than a (Distributed) Denial of Service attack or
+spamware? </h2>
+
+In providing a way for individual users to assert their privacy rights in
+web-search, we believe TMN is a legitimate use of network and computing
+resources. Although we understand that critics may use such rhetoric to cast
+doubt on our efforts and intentions, we are confident that by all common
+understandings, TMN is neither DOSware nor spamware. Here are definitions from
+Wikipedia.
+
+<p>
+"a denial-of-service attack (DoS attack) is an attempt to make a computer
+resource unavailable to its intended users. Typically the targets are
+high-profile web servers, and the attack attempts to make the hosted web pages
+unavailable on the Internet." (Wikipedia, March 29 2007)
+
+<p>
+"Spamming is the abuse of electronic messaging systems to send unsolicited
+bulk messages, which are generally undesired." (Wikipedia, March 29 2007)
+
+<p>
+"Spamdexing is any of various methods to manipulate the relevancy or
+prominence of resources indexed by a search engine, usually in a manner
+inconsistent with the purpose of the indexing system." (Wikipedia, March 29
+2007)
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
+
+<a name="clickfraud"></a>
+<h2> Does the selective click-through feature contribute to advertising "click-fraud"? </h2>
+
+The selective click-through system is designed to minimize the probability of clicking on revenue-generating ads.  Search engines currently format ad-related links in a relatively consistent manner and TMN's current ad-avoiding techniques appear to be adequate for the time being.
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
+
+<a name="response"></a>
+<h2> How have the search engine companies responded to this project? </h2>
+
+They haven't.
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
+
+<a name="schneier"></a>
+<h2> I read Bruce Schneier's review that said TrackMeNot doesn't work; is he
+right? </h2>
+
+No. First, his comments targetted the initial alpha release of TMN which is
+significantly different from the current version. Second, he misconstrues the
+goals of TMN.
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
+
+<a name="browsers"></a>
+<h2> I would love to use TrackMeNot; why doesn't it work with browsers other
+than Firefox? </h2>
+
+Our resources are limited but we would be happy to collaborate with others who
+would like to develop TMN for other browsers.
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
+
+<a name="lang"></a>
+<h2> I would love to use TrackMeNot in my language; is it supported?
+ </h2>
+
+We have been working extensively to make TMN easily translatable into more
+languages. There are currently versions in Danish, German, French, Croatian, Dutch, Portuguese and Chinese.
+We would be happy to collaborate with anyone wishing to extend
+TMN to their language!
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
+
+<a name="tor"></a>
+<h2> There are several projects that claim to protect privacy in web search
+(e.g., Tor, Anonymizer, etc.) Which is most effective? Should I use TMN
+instead of these others? </h2>
+
+The use of TMN does not preclude the use of any of these other technologies
+and the highest degree of protection will likely be obtained with some
+combination of approaches; i.e., Tor, TMN and manual cookie-management.
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
+
+<a name="captcha"></a>
+
+<h2>
+Google sends me to a 'sorry' page and tells me that it suspects my machine of
+being infected with spyware or a virus, and even prompts me for a captcha when
+I try to search. Did the search engine detect TrackMeNot?</h2>
+
+This is not a response to TMN in particular. However, some search engines
+have begun to block (and/or request CAPTCHAs) from IP addresses that issue a
+high number of queries. If you experience this behavior, we recommend that you
+configure TrackMeNot with a lower query rate (10 queries per hour appears
+to work well) and enable 'burst-mode.' This not only alleviates the strain on
+search engines that TMN might be causing, and allows you to avoid the
+CAPTCHAs, but also better mimics real human activity.
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
+<h2>Can you explain each of TMN's features?</h2>
+<a name="features"></a>
+<ul>
+
+<li><h3>RSS Support for seed-list generation/substitution (since 0.6.x)</h3>
+	TMN now parses RSS feeds to generate some portion of its initial query
+terms.  Following generation of the initial seed-list of query terms, TMN will
+occasionally query a randomly selected RSS feed to get new terms.  A default
+set of RSS feeds is provided with TMN, and users may edit and add new feeds in the TMN options panel.
+
+<li><h3>Selective Click-Through(since 0.6.x)</h3>
+	TMN now 'clicks-through' on some percentage of its searches by selecting and
+navigating to links received in the search result to further simulate user
+behavior.  The click-through mechanism is designed to minimize the probability of clicking on revenue-generating ads.
+
+<li><h3>Realtime Search-Tracking</h3>
+   TMN now recognizes when a 'real' search is being performed by a user
+and can act on this information in a variety of ways (see below).
+
+<li><h3>Dynamic URLs/Header Matching</h3>
+   TMN now keeps track of where (for each search engine) you've last
+searched and uses that URL to send its queries (for example, if you start
+using the Google toolbar rather than Google's webpage, TMN will update itself to do the same). Similarly, TMN now stores the header information your browser is
+sending out (browser type, version, OS, etc.) and mimics these in its own
+queries.
+
+<li><h3>Dynamic Queries </h3>
+As of version 0.4.x, TMN's static word list has been replaced with a dynamic
+query mechanism which 'evolves' each client (uniquely) over time, parsing the
+results of its searches for 'logical' future query terms with which to replace
+those already used.<p> Note: since the query list is continually evolving
+according to TMN algorithms, changes made by hand-editing this file will be
+overwritten. We hope to support user-supplied query lists in future versions.
+</ul>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
+
+<h2>Can you explain the various options that TMN supports?</h2>
+<a name="options"></a>
+<ul>
+
+<li><h3>Burst-Mode</h3>
+   Rather than sending queries only at randomized intervals, TMN (in burst-mode) recognizes when the user performs a search, then sends a 'burst' of queries
+over the next few moments to simulate actual user behavior.  As of version 0.6.x, burst-mode further mimics user behavior by selecting longer queries and permuting them to form a number of smaller "thematic" queries.
+
+<li><h3>Current Queries </h3>
+This button allows the user to view the current state of TMN's evolving
+query-list (see above for <a href="#features">description</a>).
+
+<li><h3>RSS-feeds</h3>
+TMN parses RSS feeds in two cases: a) to generate some portion of its initial
+query set and, b) to occasionally make substitutions in this list with new RSS
+data. While a default set of RSS feeds is provided (for each supported
+language), TMN users can edit and/or add new feeds in the options panel. To do
+so, change the text in the RSS text field (in the options panel), then click
+the 'Validate' button. To revert back to the default set of feeds, click the
+'Use Defaults' button in the options panel.
+
+<li><h3>Logging Options </h3>
+TMN offers 3 modes for logging: 1) 'disabled' - no logs are written, 2)
+  'normal' (no options checked) - logs are kept for each session and then
+deleted when Firefox is closed, and 3) 'persistent' - each session is appended
+to the log which remains indefinately (Note: although TMN logs are not large,
+the user might want to occasionally clear them (via te 'Clear Log' button when using this mode).
+
+<li><h3>Show/Clear Log </h3>
+
+The 'Show Log' button allows the user to view a snapshot of TMN's log state (refreshing
+the browser window will keep this view current); The 'Clear Log' button, will
+(as expected) clear and re-initialize TMN's log.
+
+<li><h3>Logging Options</h3>
+TMN offers 3 modes for logging: 1) 'disabled' - no logs are written, 2)
+  'normal' (no options checked) - logs are kept for each session and then
+deleted when Firefox is closed, and 3) 'persistent' - each session is appended
+to the log which remains indefinately (Note: although TMN logs are not large,
+the user is responsible for occasionally clearing them in this mode).
+
+<li><h3>Show Status/Queries</h3>
+These checkboxes control TMN's status bar -- if 'Show Queries' is unchecked,
+TMN queries are not displayed as they are sent; if 'Show Status' is unchecked, no messages are displayed in the status bar at all.
+
+</ul>
+
+<p>&nbsp;&nbsp;&nbsp; &nbsp; <a href="index.html" class=regLink>Back to main page</a><br>&nbsp;<br>
+
+        <center><IMG SRC="images/hr_rule.gif" ALT=""></center><p>
+        <!-- Creative Commons License  -->
+        <div align=center><font face=verdana size=1>
+        licensed under</font><br><a rel="license"
+        href="http://creativecommons.org/licenses/by-nc-sa/1.0/" target=_blank><img
+        alt="Creative Commons License" border="0"
+        src="http://creativecommons.org/images/public/somerights.gif"/></a>
+        </div>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>
+<p>&nbsp;<p>&nbsp;<p>&nbsp;<p>
+				</TD>
+         <TD bgcolor=#E6EAE2><IMG SRC="images/spacer.gif" WIDTH=90></TD>
+  </TR>
+</TABLE
+
+
+</center>
+</BODY>
+</HTML>

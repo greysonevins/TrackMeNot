@@ -31,29 +31,29 @@
   font-weight: bold;
   font-size: 12px;
 }
-a#firefoxbutton, a#firefoxbutton:visited {  
-    background-color: #BEE6A0;    
-    color:#4E47E6;     
-}  
+a#firefoxbutton, a#firefoxbutton:visited {
+    background-color: #BEE6A0;
+    color:#4E47E6;
+}
 .dlbutton {
-   display:block; 
-   width: 300px;  
+   display:block;
+   width: 300px;
    padding:10px 0;
-   text-align:center;  
+   text-align:center;
    font-family: Verdana;
-   font-size: 11.5px; 
-   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4); 
-   border-radius: 5px;  
-   -moz-border-radius: 5px;  
-   -webkit-border-radius: 5px; 
-   text-decoration: none;  
-   opacity:.85;   
+   font-size: 11.5px;
+   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+   border-radius: 5px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   text-decoration: none;
+   opacity:.85;
 }
 
-a#chromebutton, a#chromebutton:visited {  
-    background-color: #656AD3;  
-    color:#EF9C65;     
-}  
+a#chromebutton, a#chromebutton:visited {
+    background-color: #656AD3;
+    color:#EF9C65;
+}
 .smLink {
   color: #006ec4;
   text-decoration: none;
@@ -152,7 +152,7 @@ background-color: #FF6600
 
 <link rel="icon" type="image/png" href="tmn_icon.png" />
 <script type="text/javascript">
-function callback() { 
+function callback() {
     var userLang = navigator.language || navigator.userLanguage;
     if (userLang == "fr") {
         window.location.href = "http://cs.nyu.edu/trackmenot/fr"
@@ -207,7 +207,7 @@ C. Howe, Helen Nissenbaum</font></td>
 	 		<tr>
 		 		<td align="left">
 				<a id="firefoxbutton" class='dlbutton'
-href="http://cs.nyu.edu/trackmenot/xpi/trackmenot-0.10.0a-fx.xpi" title="Install for Firefix"> TrackMeNot for Firefox  [0.10.0]</a> 
+href="http://cs.nyu.edu/trackmenot/xpi/trackmenot-0.10.0a-fx.xpi" title="Install for Firefix"> TrackMeNot for Firefox  [0.10.0]</a>
 				</td>
 			</tr>
 				<tr >
@@ -216,20 +216,20 @@ href="http://cs.nyu.edu/trackmenot/xpi/trackmenot-0.10.0a-fx.xpi" title="Install
 	 		<tr>
 	 			<td>
 				<!--table>
-					<tr>	
+					<tr>
 					<td align="top"-->
 						<a  id="chromebutton" class='dlbutton' href="https://chrome.google.com/webstore/detail/trackmenot/cgllkjmdafllcidaehjejjhpfkmanmka" title="Install for Chrome">TrackMeNot for Chrome  [0.10.0]</a>
 					<!--/td>
 		            </tr>
 	      </table-->
-				</td>      
+				</td>
 			</tr>
 
       <tr>
         <td>
-          <a id="firefoxlink" class="link" href="http://cs.nyu.edu/trackmenot/xpi/trackmenot-0.10.0a-fx.xpi" title="Install for Firefix"> Download for Firefox  [0.10.0]</a> 
-          <a id="chromelink" class="link" href="https://chrome.google.com/webstore/detail/trackmenot/cgllkjmdafllcidaehjejjhpfkmanmka" title="Install for Firefix"> Download for Chrome  [0.10.0]</a> 
-        </td>      
+          <a id="firefoxlink" class="link" href="http://cs.nyu.edu/trackmenot/xpi/trackmenot-0.10.0a-fx.xpi" title="Install for Firefix"> Download for Firefox  [0.10.0]</a>
+          <a id="chromelink" class="link" href="https://chrome.google.com/webstore/detail/trackmenot/cgllkjmdafllcidaehjejjhpfkmanmka" title="Install for Firefix"> Download for Chrome  [0.10.0]</a>
+        </td>
       </tr>
 
 
@@ -312,29 +312,31 @@ fill-rule="evenodd" d="M60.94 82.314L17 0h20.08l25.85 52.093c.397.927.86 1.888
 
         </td>
         <td bgcolor=#E6EAE2 width=362><div class=block>
-            <font face=verdana size=2 color=#00446D><b><i>TrackMeNot</i></b></font><font face=verdana size=2 color=#413F3F> is a lightweight browser
+            <font face=verdana size=2 color=#00446D><b><i>TrackMeNot</i></b></font>
+            <font face=verdana size=2 color=#413F3F> is a lightweight browser
 extension that helps protect web searchers from surveillance and data-profiling
 by search engines.  It does so not by means of concealment or encryption (i.e.
-covering one's tracks), but instead, paradoxically, by the opposite strategy:
+covering one's tracks), but instead by the opposite strategy:
 noise and obfuscation. With TrackMeNot, actual web searches, lost in a cloud
 of false leads, are essentially hidden in plain view. User-installed
-TrackMeNot works with <!--a href="http://www.mozilla.com/firefox/" targer=_blank class=link-->Firefox <!--/a--> and Chrome browsers and popular search engines (AOL, Yahoo!,
-Google, and Bing) and requires no 3rd-party servers or services.</div>
+TrackMeNot works with Firefox and Chrome browsers, integrates with all popular search engines,
+and requires no 3rd-party servers or services.</div>
         </td>
     </tr>
     <tr>
         <td COLSPAN=3 bgcolor=#E6EAE2><div class=block><a name="how"></a>
             <br><font face=verdana size=2 color=#00446D><b>How It Works</b><br>
 TrackMeNot</font><font face=verdana size=2 color=#413F3F> runs
-in Firefox and Chrome as a low-priority background process that periodically issues
+as a low-priority background process that periodically issues
 randomized search-queries to popular search engines, e.g., AOL, Yahoo!,
 Google, and Bing. It hides users' actual search trails in a cloud of 'ghost'
 queries, significantly increasing the difficulty of aggregating such data into
 accurate or identifying user profiles. TrackMeNot serves as a means of amplifying users'
- discontent with advertising networks that not only disregard privacy, but also facilitate 
+ discontent with advertising networks that not only disregard privacy, but also facilitate
  the bulk surveillance agendas of corporate and government agencies, as documented recently
- in disclosures by Edward Snowden and others. To better simulate user behavior TrackMeNot 
- uses a dynamic query mechanism to 'evolve' each client (uniquely) over time, parsing the results of its searches for 'logical'
+ in disclosures by Edward Snowden and others. To better simulate user behavior TrackMeNot
+ uses a dynamic query mechanism to 'evolve' each client (uniquely) over time,
+  parsing the results of its searches for 'logical'
 future query terms with which to replace those already used.</p> <br>
         </div>
         </td>
@@ -342,8 +344,8 @@ future query terms with which to replace those already used.</p> <br>
     <tr>
         <td COLSPAN=3 bgcolor=#D6E0E0>
             <blockquote><p><font face=verdana size=2
-color=#413F3F><br> TrackMeNot is user-installed and user-managed, 
-residing wholly on users' system and functions without the need for 3rd-party servers or services. 
+color=#413F3F><br> TrackMeNot is user-installed and user-managed,
+residing wholly on users' system and functions without the need for 3rd-party servers or services.
 Placing users in full control is an essential feature of TrackMeNot, whose purpose is to protect against the unilateral policies set by search companies in their handling of our personal information.</p></blockquote>
         </td>
     </tr>
@@ -432,7 +434,7 @@ Toubiana, Niranjan Sivakumar</font><td>
     <tr>
         <td COLSPAN=3 bgcolor=#E6EAE2>
 <table><tr><td width=10></td><td><font face=verdana size=1>
-<br>&nbsp;<br>Special thanks to the <a href="http://cs.nyu.edu" target=_blank 
+<br>&nbsp;<br>Special thanks to the <a href="http://cs.nyu.edu" target=_blank
 class=smLink>NYU Dept of Computer Science</a>, <a href="http://mrl.nyu.edu"
 target=_blank class=smLink>the Media Research Lab</a>, <a href="http://www.mozilla.org/foundation/" target=_blank class=smLink>the Mozilla
 Foundation</a>, <a href="http://missingpixel.net/" target=_blank
@@ -468,7 +470,7 @@ class=smLink href="http://mrl.nyu.edu/~robb/">Robb Bifano</a></div></font>
 </td><td bgcolor=#E6EAE2>
 <a name="version"></a>
 <IMG SRC="images/hr_rule.gif" ALT=""><p>
-<font face=verdana size=2 color=#00446D> 
+<font face=verdana size=2 color=#00446D>
 <font face=verdana size=3 color=#00446D><b>New in version 0.8.x</b></font>
 <font face=verdana size=2>
 <ul>
@@ -485,15 +487,15 @@ class=smLink href="http://mrl.nyu.edu/~robb/">Robb Bifano</a></div></font>
 <font face=verdana size=3 color=#00446D><b>New in version 0.7.x</b></font>
 <font face=verdana size=2>
 <ul>
-<li> Keystrokes simulation and query suggestion support 
+<li> Keystrokes simulation and query suggestion support
 <li> Improved RSS seed editor and integration in Firefox
 <li> Fixed Selective click-through (for non-ad links)
 <li> Full search result page rendering
-<li> Option to show the searching iFrame 
+<li> Option to show the searching iFrame
 <li> Minor bug fixes
 </ul>
 </font>
-<font face=verdana size=2 color=#00446D> 
+<font face=verdana size=2 color=#00446D>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>See <a href="videos.html"
 class=link><u>Videos</u></a> for info on these features.</b><br>&nbsp;<p>
 </font>
@@ -503,12 +505,12 @@ class=link><u>Videos</u></a> for info on these features.</b><br>&nbsp;<p>
 <ul>
 <li> RSS support for seed-generation and substitution
 <li> Burst-mode (default: on) with query permutation
-<li> French language version 
+<li> French language version
 <li> Improved support for non-latin characters
 <li> Minor bug fixes
 </ul>
 </font>
-<font face=verdana size=2 color=#00446D> 
+<font face=verdana size=2 color=#00446D>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>See <a href="faq.html#features"
 class=link><u>Help/FAQ</u></a> for info on these features.</b><br>&nbsp;<p>
@@ -522,7 +524,7 @@ class=link><u>Help/FAQ</u></a> for info on these features.</b><br>&nbsp;<p>
 <li> Dynamic URL/header matching
 <li> Burst-mode (default: off)
 <li> Cookie-anonymization (default: off)
-<li> Improved timing mechanism 
+<li> Improved timing mechanism
 <li> Improved logging (cookie-actions, etc.)
 <li> Minor bug fixes
 </ul>
@@ -533,7 +535,7 @@ class=link><u>Help/FAQ</u></a> for info on these features.</b><br>&nbsp;<p>
 -----------------------------------
 Realtime Search-tracking
     -- TMN now recognizes when a 'real' search is being performed by a user and can
-act on this information in a variety of ways (see below).  
+act on this information in a variety of ways (see below).
 
 Dynamic URLs/Header Matching:
     -- TMN now keeps track of where (for each search engine) you've last
@@ -544,7 +546,7 @@ sending out (browser type, version, OS, etc.) and mimics these in its own querie
 
 Burst-Mode (enable/disable in options):
     -- Rather than sending queries only at randomized intervals, TMN (in burst-mode)
-recognizes when the user performs a search, then sends a 'burst' of queries 
+recognizes when the user performs a search, then sends a 'burst' of queries
 over the next few moments to simulate actual user behavior.
 
 Cookie-Anonymization (enable/disable in options):
@@ -562,7 +564,7 @@ these histories; when this feature is disabled, only TMN searches will appear.
 <font face=verdana size=3 color=#00446D><b>New in version 0.4.x</b></font>
 <font face=verdana size=2>
 <ul>
-<li> Dynamic query sets 
+<li> Dynamic query sets
 <li> Option to select search-engines
 <li> Added statusbar context-menu
 <li> New windows for log/query display
@@ -623,13 +625,13 @@ the New Surveillance," Journal of Social Issues, Vol 59, No. 2, 2003,
   // show download button according to the browser
   // default : Firefox
   var isChrome = !!window.chrome && !!window.chrome.webstore;
-  if (isChrome) { 
+  if (isChrome) {
     document.getElementById("firefoxbutton").style.display = 'none';
-    document.getElementById("chromelink").style.display = 'none'; 
+    document.getElementById("chromelink").style.display = 'none';
   } else {
     document.getElementById("chromebutton").style.display = 'none';
-    document.getElementById("firefoxlink").style.display = 'none'; 
-    
+    document.getElementById("firefoxlink").style.display = 'none';
+
   }
 
 </script>
