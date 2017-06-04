@@ -80,13 +80,6 @@ href="http://cs.nyu.edu/trackmenot/xpi/trackmenot-0.10.0a-fx.xpi" title="Install
 				</td>
 			</tr>
 
-      <tr>
-        <td>
-          <a id="firefoxlink" class="link" href="http://cs.nyu.edu/trackmenot/xpi/trackmenot-0.10.0a-fx.xpi" title="Install for Firefix"> Download for Firefox  [0.10.0]</a>
-          <a id="chromelink" class="link" href="https://chrome.google.com/webstore/detail/trackmenot/cgllkjmdafllcidaehjejjhpfkmanmka" title="Install for Firefix"> Download for Chrome  [0.10.0]</a>
-        </td>
-      </tr>
-
 		</table>
 		</td>
 	</tr>
@@ -329,16 +322,16 @@ the New Surveillance," Journal of Social Issues, Vol 59, No. 2, 2003,
 
 </center>
 <script>
-// show download button according to the browser
-// default : Firefox
-var isChrome = !!window.chrome && !!window.chrome.webstore;
-if (isChrome) {
-  document.getElementById("firefoxbutton").style.display = "none";
-  document.getElementById("chromelink").style.display = "none";
-} else {
-  document.getElementById("chromebutton").style.display = "none";
-  document.getElementById("firefoxlink").style.display = "none";
-}
+  // show download button according to the browser: chrome and firefox
+  // display both for other browsers
+  var isChrome = !!window.chrome && !!window.chrome.webstore,
+      isFirefox = typeof InstallTrigger !== 'undefined';
+
+  if (isChrome) 
+    document.getElementById("firefoxbutton").style.display = 'none';
+  else if (isFirefox)
+    document.getElementById("chromebutton").style.display = 'none';
+
 </script>
 </body>
 </html>
