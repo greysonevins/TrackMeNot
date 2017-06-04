@@ -13,22 +13,36 @@
 <meta name="keywords" content="TrackMeNot, obfuscation, extension, privacy, surveillance, search, howe, nissenbaum, toubiana, cims, nyu, values, design">
 <link rel="stylesheet" href="css/style.css">
 <link rel="icon" type="image/png" href="tmn_icon.png" />
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 <script type="text/javascript">
-function callback() {
-  var userLang = navigator.language || navigator.userLanguage;
-  if (userLang == "fr") {
-    window.location.href = "http://cs.nyu.edu/trackmenot/index-fr.html";
-  } else if (userLang.indexOf("zh") == 0) {
-    window.location.href = "http://cs.nyu.edu/trackmenot/index-zh.html";
+$(function() {
+
+  function selectLanguage(language) {
+    $("[lang]").each(function() {
+      if ($(this).attr("lang") === language) $(this).show();
+      else $(this).hide();
+    });
   }
-}
-if (document.readyState === "complete" ||
-  (document.readyState !== "loading" && !document.documentElement.doScroll)
-) {
-  callback();
-} else {
-  document.addEventListener("DOMContentLoaded", callback);
-}
+
+  // pick download button for browser: chrome and firefox, default=both
+  var isChrome = (!!window.chrome && !!window.chrome.webstore);
+  var isFirefox = typeof InstallTrigger !== "undefined";
+
+  if (isChrome)
+    document.getElementById("firefoxbutton").style.display = "none";
+  else if (isFirefox)
+    document.getElementById("chromebutton").style.display = "none";
+
+  var lang = "en", userLang = navigator.language || navigator.userLanguage;
+
+  if (userLang === "fr" || location.href.endsWith('fr')) lang = "fr";
+  if (userLang.indexOf("zh") === 0 || location.href.endsWith('zh')) lang = "zh";
+
+  selectLanguage(lang);
+});
+
 </script>
 </head>
 
@@ -48,8 +62,7 @@ if (document.readyState === "complete" ||
             <table>
                 <tr>
                     <td><font face=verdana size=2 color=#00446D><b>Created by:</b></font></td>
-                    <td><font face=verdana size=2 color=#413F3F>&nbsp;Daniel
-C. Howe, Helen Nissenbaum</font></td>
+                    <td><font face=verdana size=2 color=#413F3F>&nbsp;Daniel C. Howe, Helen Nissenbaum</font></td>
                 </tr>
                 <tr>
                     <td><font face=verdana size=2 color=#00446D><b>Developed by:</b></font></td>
@@ -67,16 +80,17 @@ C. Howe, Helen Nissenbaum</font></td>
 	 	<table border=0>
 	 		<tr>
 		 		<td align="left">
-				<a id="firefoxbutton" class='dlbutton'
-href="http://cs.nyu.edu/trackmenot/xpi/trackmenot-0.10.0a-fx.xpi" title="Install for Firefix"> TrackMeNot for Firefox  [0.10.0]</a>
+				<a id="firefoxbutton" class='dlbutton' href="https://addons.mozilla.org/en-us/firefox/addon/trackmenot/"
+          title="Install for Firefix"> TrackMeNot for Firefox  [0.10.0]</a>
 				</td>
 			</tr>
-				<tr >
+				<tr>
 			</tr>
 
 	 		<tr>
 	 			<td>
-						<a  id="chromebutton" class='dlbutton' href="https://chrome.google.com/webstore/detail/trackmenot/cgllkjmdafllcidaehjejjhpfkmanmka" title="Install for Chrome">TrackMeNot for Chrome  [0.10.0]</a>
+						<a id="chromebutton" class='dlbutton' href="https://chrome.google.com/webstore/detail/trackmenot/cgllkjmdafllcidaehjejjhpfkmanmka"
+              title="Install for Chrome">TrackMeNot for Chrome  [0.10.0]</a>
 				</td>
 			</tr>
 
@@ -87,23 +101,28 @@ href="http://cs.nyu.edu/trackmenot/xpi/trackmenot-0.10.0a-fx.xpi" title="Install
         <td ROWSPAN=8 background="images/left_frame.gif">
             <IMG SRC="images/spacer.gif" WIDTH=71 HEIGHT=522 ALT="">
         </td>
-        <td bgcolor=#D6E0E0 width=220><!--144 adjuster -->
-          <b><br><a href="#how" class=linkList>&nbsp;&nbsp;&diams; How It
-Works</a><br><a href="#why" class=linkList>&nbsp;&nbsp;&diams; Why We Created
-TMN</a><br><a href="faq.html" class=linkList>&nbsp;&nbsp;&diams;
-Installation / Help</a>
-<br><!--a href="#version" class=linkList>&nbsp;&nbsp;&diams; New 0.8
-Features!</a><br-->
+        <td bgcolor=#D6E0E0 width=220><!--144 adjuster --><b><br>
+<a href="#how" class=linkList>&nbsp;&nbsp;&diams; How It Works</a><br>
+<a href="#why" class=linkList>&nbsp;&nbsp;&diams; Why We Created TMN</a><br>
+<a href="faq.html" class=linkList>&nbsp;&nbsp;&diams; Installation / Help</a><br>
 <a href="TMN-Howe-Niss08-ch23.pdf" class=linkList>&nbsp;&nbsp;&diams; Read the Paper</a><br>
 <a href="https://github.com/vtoubiana/TrackMeNot" class=linkList>&nbsp;&nbsp;&diams; Source on GitHub</a><br>
 <a href="videos.html" class=linkList>&nbsp;&nbsp;&diams; Tutorials</a><br>
 <a href="faq.html" class=linkList>&nbsp;&nbsp;&diams; FAQ</a><br>
-<a href="" onmouseover="this.href='mai' + 'lto:' + 'trackmenot.help' + '@' + 'gmail.com?subject=Re: TrackMeNot'" class=linkList>&nbsp;&nbsp;&diams;
-Contact Us</a><br></b>
+<!--a href="" onmouseover="this.href='mai' + 'lto:' + 'trackmenot.help' + '@' + 'gmail.com?subject=Re: TrackMeNot'" class=linkList>&nbsp;&nbsp;&diams;
+Contact Us</a><br--></b>
 
 <div id="sharing">
 
-<!-- Sharingbutton Facebook -->
+<!-- private sharing button Email -->
+<a class="private-sharing-button__link" href="" target="_self" aria-label="" onmouseover="this.href='mai' + 'lto:' + 'trackmenot.help' + '@' + 'gmail.com?subject=Re: TrackMeNot Question'">
+  <div class="private-sharing-button private-sharing-button--email private-sharing-button--small"><div aria-hidden="true" class="private-sharing-button__icon private-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 4H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7.25 14.43l-3.5 2c-.08.05-.17.07-.25.07-.17 0-.34-.1-.43-.25-.14-.24-.06-.55.18-.68l3.5-2c.24-.14.55-.06.68.18.14.24.06.55-.18.68zm4.75.07c-.1 0-.2-.03-.27-.08l-8.5-5.5c-.23-.15-.3-.46-.15-.7.15-.22.46-.3.7-.14L12 13.4l8.23-5.32c.23-.15.54-.08.7.15.14.23.07.54-.16.7l-8.5 5.5c-.08.04-.17.07-.27.07zm8.93 1.75c-.1.16-.26.25-.43.25-.08 0-.17-.02-.25-.07l-3.5-2c-.24-.13-.32-.44-.18-.68s.44-.32.68-.18l3.5 2c.24.13.32.44.18.68z"></path></svg>
+    </div>
+  </div>
+</a>
+
+<!-- private sharing button Facebook -->
 <a class="private-sharing-button__link"
 href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcs.nyu.edu%2Ftrackmenot"
 target="_blank" aria-label="">
@@ -117,7 +136,7 @@ d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5
   </div>
 </a>
 
-<!-- Sharingbutton Twitter -->
+<!-- private sharing button Twitter -->
 <a class="private-sharing-button__link"
 href="https://twitter.com/intent/tweet/?text=Protect%20your%20search%20history%20from%20trackers%20with%20TrackMeNot!&amp;url=https%3A%2F%2Fcs.nyu.edu%2Ftrackmenot"
 target="_blank" aria-label="">
@@ -136,7 +155,7 @@ d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9
   </div>
 </a>
 
-<!-- Sharingbutton Hacker News -->
+<!-- private sharing button HackerNews -->
 <a class="private-sharing-button__link"
 href="https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fcs.nyu.edu%2Ftrackmenot&amp;t=Protect%20your%20search%20history%20from%20trackers%20with%20TrackMeNot!"
 target="_blank" aria-label="">
@@ -157,16 +176,24 @@ fill-rule="evenodd" d="M60.94 82.314L17 0h20.08l25.85 52.093c.397.927.86 1.888
 </div>
 
         </td>
-        <td bgcolor=#E6EAE2 width=362><div class=block>
-            <font face=verdana size=2 color=#00446D><b><i>TrackMeNot</i></b></font>
-            <font face=verdana size=2 color=#413F3F> is a lightweight browser
-extension that helps protect web searchers from surveillance and data-profiling
-by search engines.  It does so not by means of concealment or encryption (i.e.
-covering one's tracks), but instead by the opposite strategy:
-noise and obfuscation. With TrackMeNot, actual web searches, lost in a cloud
-of false leads, are essentially hidden in plain view. User-installed
-TrackMeNot works with Firefox and Chrome browsers, integrates with all popular search engines,
-and requires no 3rd-party servers or services.</div>
+        <td bgcolor=#E6EAE2 width=362>
+          <div class=block>
+            <span lang="en">
+              <font face=verdana size=2 color=#00446D><b><i>TrackMeNot</i></b></font>
+              <font face=verdana size=2 color=#413F3F> is a lightweight browser extension that helps protect web searchers from surveillance and data-profiling by search engines.  It does so not by means of concealment or encryption (i.e. covering one's tracks), but instead by the opposite strategy: noise and obfuscation. With TrackMeNot, actual web searches, lost in a cloud of false leads, are essentially hidden in plain view. User-installed TrackMeNot works with Firefox and Chrome browsers, integrates with all popular search engines, and requires no 3rd-party servers or services.
+            </span>
+
+            <span lang="fr">
+              <font face=verdana size=2 color=#00446D><b><i>TrackMeNot</i></b></font>
+              <font face=verdana size=2 color=#413F3F> est une extension de navigateur qui a pour objectif de prévenir (ou du moins de limiter) la surveillance et le profilage des moteurs de recherches. Plutôt que de cacher vos recherche en recourant à des outils cryptographiques, TrackMeNot s'appuie sur une injection de bruit et d'obfuscation. Vos recherches sont en fait sont clairement visibles mais sont cachés au milieu de celles effectuées par TrackMeNot. TrackMeNot existe pour les nvaigateurs Firefox et Chrome browsers et supporte les moteurs de recherches les plus utilisié AOL, Yahoo!, Google, et Bing) sans nécessité l'intervention d'un tiers.
+            </span>
+
+            <span lang="zh">
+              <font face=verdana size=2 color=#00446D><b><i>TrackMeNot</i></b></font>
+              <font face=verdana size=2 color=#413F3F> 山初毎要禁全茨州朝込輔報藤論凸強。国割同救葉読起本並理玲重属首提手投痛蒙機。割難高体想因話哲不矢我軍写基携美館会看掲。題康安初議康応率条確師著見相覧目。全携優参横及謙会不末新常必法投大争転面。岡真断記稿情月演愛府携囲売過町。見湯兵王勝毛賠報速半条高円念行際趣意。弁倉氏者値面課月方意原島改知領置択地定野。
+説断団眺押今前読面来堀合人覧月巻画投。灰禁投新考原大投動署目編健子資状紙児話。現経船値教関題経特街払進介講工示新有。若合本化覇巻制躍当奪戦阻止状聞入割説。者技部性多質走時漢京副県何友経格鳴谷悪。記述緩当低始航退著世需問実。園喝法別稿滋週構勧滅株暮。
+            </span>
+          </div>
         </td>
     </tr>
     <tr>
@@ -321,17 +348,5 @@ the New Surveillance," Journal of Social Issues, Vol 59, No. 2, 2003,
 </table>
 
 </center>
-<script>
-  // show download button according to the browser: chrome and firefox
-  // display both for other browsers
-  var isChrome = !!window.chrome && !!window.chrome.webstore,
-      isFirefox = typeof InstallTrigger !== 'undefined';
-
-  if (isChrome) 
-    document.getElementById("firefoxbutton").style.display = 'none';
-  else if (isFirefox)
-    document.getElementById("chromebutton").style.display = 'none';
-
-</script>
 </body>
 </html>
