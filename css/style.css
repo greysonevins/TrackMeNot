@@ -19,6 +19,7 @@
 #languageSelect {
   position: absolute;
   top:10px;
+  margin-left:315px;
 }
 a#firefoxbutton, a#firefoxbutton:visited {
     background-color: #BEE6A0;

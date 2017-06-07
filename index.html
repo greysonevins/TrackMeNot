@@ -53,11 +53,11 @@ $(function() {
         <td COLSPAN=2 ROWSPAN=4 bgcolor=#E6EAE2>
             <IMG SRC="images/TMN_logo.gif" WIDTH=234 HEIGHT=206 ALT=""></td>
         <td COLSPAN=2 bgcolor=#E6EAE2>
-            <IMG SRC="images/TMN_header.gif" WIDTH=362 HEIGHT=52 ALT=""></td>
-        <td COLSPAN=2>
+            <IMG SRC="images/TMN_header.gif" WIDTH=362 HEIGHT=52 ALT="">
             <div id="languageSelect">
-                <a class="link" href="index.html?en">EN</a> / <a class="link" href="index.html?fr">FR</a>
-                <!-- / <a href="index.html?ch">CH</a> -->
+                <a class="link" href="index.html?en">EN</a> / 
+                <a class="link" href="index.html?fr">FR</a> / 
+                <a class="link" href="index.html?zh">ZH</a>
             </div>
         </td>
         <td ROWSPAN=12 bgcolor=#E6EAE2><!-- right margin -->
@@ -67,11 +67,19 @@ $(function() {
         <td COLSPAN=2 bgcolor=#E6EAE2>
             <table>
                 <tr>
-                    <td><font face=verdana size=2 color=#00446D><b>Created by:</b></font></td>
+                    <td><font face=verdana size=2 color=#00446D><b>
+                      <span lang="en">Created by:</span>
+                      <span lang="fr">Created by:</span>
+                      <span lang="zh">創建</span>
+                    </b></font></td>
                     <td><font face=verdana size=2 color=#413F3F>&nbsp;Daniel C. Howe, Helen Nissenbaum</font></td>
                 </tr>
                 <tr>
-                    <td><font face=verdana size=2 color=#00446D><b>Developed by:</b></font></td>
+                    <td><font face=verdana size=2 color=#00446D><b>
+                      <span lang="en">Developed by:</span>
+                      <span lang="fr">Developed by:</span>
+                      <span lang="zh">開發</span>
+                    </b></font></td>
                     <td><font face=verdana size=2 color=#413F3F>&nbsp;Vincent Toubiana</font></td>
                 </tr>
             </table>
@@ -87,7 +95,11 @@ $(function() {
 	 		<tr>
 		 		<td align="left">
 				<a id="firefoxbutton" class='dlbutton' href="https://addons.mozilla.org/en-us/firefox/addon/trackmenot/"
-          title="Install for Firefix"> TrackMeNot for Firefox  [0.10.0]</a>
+          title="Install for Firefix"> 
+          <span lang="en">TrackMeNot for Firefox  [0.10.0]</span>
+          <span lang="fr">TrackMeNot pour Firefox  [0.10.0]</span>
+          <span lang="zh">在火狐(Firefox) 使用TrackMeNot</span>
+        </a>
 				</td>
 			</tr>
 				<tr>
@@ -96,7 +108,11 @@ $(function() {
 	 		<tr>
 	 			<td>
 						<a id="chromebutton" class='dlbutton' href="https://chrome.google.com/webstore/detail/trackmenot/cgllkjmdafllcidaehjejjhpfkmanmka"
-              title="Install for Chrome">TrackMeNot for Chrome  [0.10.0]</a>
+              title="Install for Chrome">
+              <span lang="en">TrackMeNot for Chrome  [0.10.0]</span>
+              <span lang="fr">TrackMeNot pour Chrome  [0.10.0]</span>
+              <span lang="zh">在谷歌瀏覽器(Chrome) 使用TrackMeNot </span>
+            </a>
 				</td>
 			</tr>
 
@@ -107,14 +123,42 @@ $(function() {
         <td ROWSPAN=8 background="images/left_frame.gif">
             <IMG SRC="images/spacer.gif" WIDTH=71 HEIGHT=522 ALT="">
         </td>
-        <td bgcolor=#D6E0E0 width=220><!--144 adjuster --><b><br>
-<a href="#how" class=linkList>&nbsp;&nbsp;&diams; How It Works</a><br>
-<a href="#why" class=linkList>&nbsp;&nbsp;&diams; Why We Created TMN</a><br>
-<a href="faq.html" class=linkList>&nbsp;&nbsp;&diams; Installation / Help</a><br>
-<a href="resources/trackmenot2009.pdf" class=linkList>&nbsp;&nbsp;&diams; Read the Paper</a><br>
-<a href="https://github.com/vtoubiana/TrackMeNot" class=linkList>&nbsp;&nbsp;&diams; Source on GitHub</a><br>
-<a href="videos.html" class=linkList>&nbsp;&nbsp;&diams; Tutorials</a><br>
-<a href="faq.html" class=linkList>&nbsp;&nbsp;&diams; FAQ</a><br>
+        <td bgcolor=#D6E0E0 width=234><!--144 adjuster --><b><br>
+          <a href="#how" class=linkList>&nbsp;&nbsp;&diams; 
+            <span lang="en">How It Works</span>
+            <span lang="fr">Comment ç marche</span>
+            <span lang="zh">如何運作</span>
+          </a><br>
+          <a href="#why" class=linkList>&nbsp;&nbsp;&diams; 
+            <span lang="en">Why We Created TMN</span>
+            <span lang="fr">Pourquoi nous développons TMN </span>
+             <span lang="zh">我們創建TMN的原因</span>
+          </a><br>
+          <a href="faq.html" class=linkList>&nbsp;&nbsp;&diams; 
+            <span lang="en">Installation / Help</span>
+            <span lang="fr">Installation / Help </span>
+             <span lang="zh">安裝/幫助</span>
+          </a><br>
+          <a href="resources/trackmenot2009.pdf" class=linkList>&nbsp;&nbsp;&diams; 
+            <span lang="en">Read the Paper</span>
+            <span lang="fr">Lire l'article</span>
+             <span lang="zh">閱覽相關文本</span>
+          </a><br>
+          <a href="https://github.com/vtoubiana/TrackMeNot" class=linkList>&nbsp;&nbsp;&diams; 
+            <span lang="en">Source on GitHub</span>
+            <span lang="fr">Source sur GitHub</span>
+             <span lang="zh">在GitHub的源代碼</span>
+          </a><br>
+          <a href="videos.html" class=linkList>&nbsp;&nbsp;&diams; 
+            <span lang="en">Tutorials</span>
+            <span lang="fr">Videos</span>
+             <span lang="zh">視頻</span>
+          </a><br>
+          <a href="faq.html" class=linkList>&nbsp;&nbsp;&diams; 
+            <span lang="en">FAQ</span>
+            <span lang="fr">FAQ</span>
+             <span lang="zh">常見問答</span>
+          </a><br>
 <!--a href="" onmouseover="this.href='mai' + 'lto:' + 'trackmenot.help' + '@' + 'gmail.com?subject=Re: TrackMeNot'" class=linkList>&nbsp;&nbsp;&diams;
 Contact Us</a><br--></b>
 
@@ -182,7 +226,7 @@ fill-rule="evenodd" d="M60.94 82.314L17 0h20.08l25.85 52.093c.397.927.86 1.888
 </div>
 
         </td>
-        <td bgcolor=#E6EAE2 width=362>
+        <td bgcolor=#E6EAE2 width=360>
           <div class=block>
             <span lang="en">
               <font face=verdana size=2 color=#00446D><b><i>TrackMeNot</i></b></font>
@@ -196,8 +240,7 @@ fill-rule="evenodd" d="M60.94 82.314L17 0h20.08l25.85 52.093c.397.927.86 1.888
 
             <span lang="zh">
               <font face=verdana size=2 color=#00446D><b><i>TrackMeNot</i></b></font>
-              <font face=verdana size=2 color=#413F3F> 山初毎要禁全茨州朝込輔報藤論凸強。国割同救葉読起本並理玲重属首提手投痛蒙機。割難高体想因話哲不矢我軍写基携美館会看掲。題康安初議康応率条確師著見相覧目。全携優参横及謙会不末新常必法投大争転面。岡真断記稿情月演愛府携囲売過町。見湯兵王勝毛賠報速半条高円念行際趣意。弁倉氏者値面課月方意原島改知領置択地定野。
-説断団眺押今前読面来堀合人覧月巻画投。灰禁投新考原大投動署目編健子資状紙児話。現経船値教関題経特街払進介講工示新有。若合本化覇巻制躍当奪戦阻止状聞入割説。者技部性多質走時漢京副県何友経格鳴谷悪。記述緩当低始航退著世需問実。園喝法別稿滋週構勧滅株暮。
+              <font face=verdana size=2 color=#413F3F> 是一個簡便的瀏覽器擴充軟件，防止網絡搜尋引擎監測和分析網絡搜尋者的數據。它是以干擾和阻截的方式來隱藏使用者真實的瀏覽紀錄，而非使用傳統的隱藏或加密方法。安裝了TrackMeNot，透過發放一籃子的虛假導向，真實的網絡搜尋路徑將難以追蹤，從而產生花多眼亂的隱藏效果。TrackMeNot毋須經第三方的服務器或服務支援，就可於火狐(Firefox)和谷歌瀏覽器(Chrome)，以及其他熱門的搜索器（例如:美國在線(AOL)、雅虎(Yahoo)、谷歌(Google)、和必應(Bing)）上使用。
             </span>
           </div>
         </td>
@@ -208,6 +251,7 @@ fill-rule="evenodd" d="M60.94 82.314L17 0h20.08l25.85 52.093c.397.927.86 1.888
             <b>
             <span lang="en">How It Works</span>
             <span lang="fr">Comment ça marche?</span>
+            <span lang="zh">運作方式</span>
             </font></b>
             <br><br/>
             <font face=verdana size=2 color=#413F3F> 
@@ -218,6 +262,7 @@ fill-rule="evenodd" d="M60.94 82.314L17 0h20.08l25.85 52.093c.397.927.86 1.888
             accurate or identifying user profiles. TrackMeNot serves as a means of amplifying users' discontent with advertising networks that not only disregard privacy, but also facilitate the bulk surveillance agendas of corporate and government agencies, as documented recently in disclosures by Edward Snowden and others. To better simulate user behavior TrackMeNot uses a dynamic query mechanism to 'evolve' each client (uniquely) over time, parsing the results of its searches for 'logical' future query terms with which to replace those already used.</span>
             <span lang="fr"> <b><i><font face=verdana size=2 color=#00446D>TrackMeNot</font></i></b> tourne en tache de fond de votre navigateur pour lancer fréquemment des recherches sur les moteurs que vous choisissez (par exemple Yahoo!, Google ou Bing). TrackMeNot cache vos recherches dans un nuage de recherche "fantômes" afin de complexifier le profilage des utilisateurs et de le rendre inefficace. TMN sert aussi à signaler aux moteurs de recherche qui impact notre vie privée à des fins publicitaires mais aussi facilitent la surveillance de masse par les agences gouvernementales comme cela a été révélé récemment par Edward Snowden. Afin de simuler un comportement réaliste, TrackMeNot effectue des recherches dynamiques qui 'évoluent' indépendamment pour chaque client. en tache de fond de votre navigateur pour lancer fréquement des recherches sur les moteurs que vous choisissez ( par exemple Yahoo!, Google ou Bing). TrackMeNot cache vos recherches dans un nuage de recherche "phantomes" afin de complexifier le profilage des utilistaeurs et de le rendre inefficace. TMN sert aussi à signaler aux moteurs de recherche qui impact notre vie privée à des fins publicitaires mais aussi facilitent la surveillance de masse par les agences gouvernementales comme cela a été révélé récemment par Edward Snowden. Afin de simuler un comportement réaliste, TrackMeNot effectue des recherches dynamiques qui 'evoluent' indépendamment pour chaque client.
             </span>
+            <span lang="zh"><b><i><font face=verdana size=2 color=#00446D>TrackMeNot</font></i></b> 在火狐(Firefox)和谷歌瀏覽器(Chrome)運行時，會以低優的後台進程向熱門的搜尋引擎，例如美國在線(AOL)、雅虎(Yahoo)、谷歌(Google)、和必應(Bing) 定期發出多個隨機的搜尋指令，以隱藏使用者真實的搜尋路徑。有了幻影指令的保護，對方要將搜集到的數據準確地轉化或組合成為用戶檔案的難度將會大大提升。TMN要道出用戶對廣告網絡的不滿，不但因它們無視私隱，廣告網絡更為企業和政府等機構的大規模監控行動提供了的便利；這些都記錄在斯諾登(Edward Snowden)和其他人近期揭露的資料中。為了提高模擬搜尋指令的像真度，TrackMeNot使用動態指令機制，每個客戶都會配備不斷演進的搜尋指令，同時按邏輯推斷合適的搜尋指令，來取代已用過的搜尋指令。</span>
 <br><br>
         </div>
         </td>
@@ -226,9 +271,12 @@ fill-rule="evenodd" d="M60.94 82.314L17 0h20.08l25.85 52.093c.397.927.86 1.888
         <td COLSPAN=3 bgcolor=#D6E0E0>
         <blockquote><p><font face=verdana size=2 color=#413F3F>
         <br>
-        <span lang="en">TrackMeNot is user-installed and user-managed, residing wholly on users' system and functions without the need for 3rd-party servers or services.
+        <span lang="en"><i>TrackMeNot</i> is user-installed and user-managed, residing wholly on users' system and functions without the need for 3rd-party servers or services.
         Placing users in full control is an essential feature of TrackMeNot, whose purpose is to protect against the unilateral policies set by search companies in their handling of our personal information.</span>
-        <span lang="fr">TrackMeNot est complétement paramétrable par l'utilisateur (intégré à l'interface de Firefox en cliquant sur l'icône TMN). Une fois installé TMN s'exécute uniquement depuis votre navigateur sans nécessiter l'intervention de services tiers ou d'autres serveurs. Donner tous les contrôles à l'utilisateur est une des fonctionnalités primordiales de TMN.</span>
+        <span lang="fr"><i>TrackMeNot</i> est complétement paramétrable par l'utilisateur (intégré à l'interface de Firefox en cliquant sur l'icône TMN). Une fois installé TMN s'exécute uniquement depuis votre navigateur sans nécessiter l'intervention de services tiers ou d'autres serveurs. Donner tous les contrôles à l'utilisateur est une des fonctionnalités primordiales de TMN.</span>
+        <span lang="zh">
+          備註：<i>TrackMeNot</i> 是由用戶安裝和管理（融合到Firefox的“工具”菜單中，當中包括各種簡易選項）。完成下載後，毋須經第三方的伺服器或服務支援，則可在用戶系統中運行。在搜尋引擎公司設立單方面條款情況下，由用戶完全掌控以保護個人資訊是TMN其中一大優點。 
+        </span>
         </p></blockquote>
         </td>
     </tr>
@@ -236,7 +284,9 @@ fill-rule="evenodd" d="M60.94 82.314L17 0h20.08l25.85 52.093c.397.927.86 1.888
             <td COLSPAN=3 bgcolor=#E6EAE2><a name="why"></a><div class=block>
                 <br>&nbsp;<br><font face=verdana size=2 color=#00446D><b>
                 <span lang="en">Why We Created TMN</span>
-                <span lang="fr">Pourquoi nous avons développé TMN</span></b><br>
+                <span lang="fr">Pourquoi nous avons développé TMN</span>
+                <span lang="zh">我們為甚麼要創建TMN</span>
+              </b><br>
 <p>
 <font face=verdana size=2 color=#413F3F>
 <span lang="en">
@@ -258,9 +308,19 @@ href=#marx class=smLink>1</a></small></sup>. TrackMeNot may not radically alter 
 </span>
 <span lang="fr">
 La conservation des historiques de recherches et la création de profiles a commencé à soulever un problème de vie privée lorsque AOL a diffusé les historiques de recherches de 650.000 de ses utilisateurs en Aout 2006 <a href="http://www.nytimes.com/2006/08/09/technology/09aol.html" target="_blank" class="link"> comme l'a révélé le New York Times</a>
-Nous sommes préoccupé par les possibilité qu'offrent ces historiques de recherche qui demeurent disponibles aux moteurs de recherche tels que AOL, Yahoo!, Google, etc. et éventuellement à des tierces parties. Le Web a évolué en une énorme source d'information à laquelle nous accédons par l'intermédiaires de moteurs de recherches qui sont donc en mesure d'avoir une idée très précise de ceux qui nous intéresse. Que pouvons-nous faire<br><br>
+Nous sommes préoccupé par les possibilité qu'offrent ces historiques de recherche qui demeurent disponibles aux moteurs de <a href="http://www.nytimes.com/2006/08/15/technology/15search.html" target="_blank" class="link">recherche tels que AOL, Yahoo!, Google, etc. et éventuellement à des tierces parties</a>. Le Web a évolué en une énorme source d'information à laquelle nous accédons par l'intermédiaires de moteurs de recherches qui sont donc en mesure d'avoir une idée très précise de ceux qui nous intéresse. Que pouvons-nous faire<br><br>
 Les approches légales -- faire intervenir le législateur -- pourrait être efficace mais nécessiterait un effort conjoints de plusieurs parties.<br><br>
 Nous avons développé TrackMeNot comme une solution immédiate, configuré et contrôlé par les utilisateurs eux même. Cela correspond à une classe de stratégie définit par  Gary T. Marx, comme un mécanisme de résistance des individus tirant partie des vulnérabilités des systèmes <sup><small><a href="https://cs.nyu.edu/trackmenot/fr/#marx" class="smLink">1</a></small></sup>.
+</span>
+<span lang="zh">
+  記錄用戶的搜尋活動和儲存搜尋資料，再組建成有時可被識別的個人檔案的做法，被受主流媒體關注。近期紐約時報(New York Times)就在頭版報道<a href="http://www.nytimes.com/2006/08/09/technology/09aol.html" target="_blank" class="link">美國在線(AOL)公布搜集到的個人用戶數據</a>；紐約時報亦在商業版(New York Times Business Section)頭版報道<a href="http://www.nytimes.com/2006/08/15/technology/15search.html" target="_blank" class="link">雅虎(Yahoo)、美國在線(AOL)、必應(Bing)、和谷歌(Google)如何組建網絡用戶檔案</a>。
+  <br><br>
+  對於美國在線、雅虎、谷歌等企業可系統地監測和存儲搜尋指令，甚至有可能提供給第三方使用，我們感到很不安。網絡已經發展成如此關鍵的訊息庫，當我們的搜尋習慣很大程度地反映了我們的身份、我們關心甚麼以及我們的生活方式，我們就有理由阻止肆意的監控。但是，我們可以怎麼辦呢？
+  <br><br>
+  法律途徑 –促請立法者支持限制取用，或要求法院擴大＜第四修訂案＞的保護，這可能有效，但要通過各方精心籌劃。訴諸搜尋服務供應商的成功機會似乎相當渺茫，因為這些限制影響著他們的利益。這些只能是長遠的期望。
+  <br><br>
+  所以我們開發了 TrackMeNot 以作即時的問題解決，由用戶自己安裝、自己管控。就如加里.馬克斯(Gary T.Marx)所主張，在階級策略下，個人可以善用大規模系統下有盲點的優勢，來抵禦監控<sup><small><a
+href=#marx class=smLink>1</a></small></sup>。 TrackMeNot未必可以從根本改變私隱保護的情景，但有助將一些現代生活敏感的範疇交回個人手中，這應該是屬於任何一個自由社會的。
 </span>
  </font></p>
             </div>
@@ -268,14 +328,43 @@ Nous avons développé TrackMeNot comme une solution immédiate, configuré et c
     </tr>
     <tr>
             <td COLSPAN=3 bgcolor=#E6EAE2><div class=block><a name="bg"></a>
-                <br><font face=verdana size=2
-color=#00446D><b>Background</b></font><br></br>
-   <font face=verdana size=2 color=#413F3F>Public awareness of the vulnerability of searches to systematic surveillance and logging by search engine companies, was initially raised in the wake of a case, initiated August 2005, in which the United States Department of Justice (DOJ) issued a subpoena to Google for one week's worth of search query records (absent identifying information) and a random list of one million URLs from its Web index. This was cited as part of its defense of the constitutionality of the Child Online Protection Act (COPA). When Google refused, the DOJ filed a motion in a Federal District Court to force compliance. Google argued that the request imposed a burden, would compromise trade secrets, undermine customers' trust in Google, and have a chilling effect on search activities. In March 2006, the Court granted a reduced version of the first motion, ordering Google to provide a random listing of 50,000 URLs, but denied the second motion, namely, the request for search queries.</p><p>
+                <br><font face=verdana size=2 color=#00446D><b>
+                <span lang="en">Background</span>
+                <span lang="fr">Background</span>
+                <span lang="zh">背景</span>
+              </b></font><br></br>
+   <font face=verdana size=2 color=#413F3F>
+   <span lang="en">
+    Public awareness of the vulnerability of searches to systematic surveillance and logging by search engine companies, was initially raised in the wake of a case, initiated August 2005, in which the United States Department of Justice (DOJ) issued a subpoena to Google for one week's worth of search query records (absent identifying information) and a random list of one million URLs from its Web index. This was cited as part of its defense of the constitutionality of the Child Online Protection Act (COPA). When Google refused, the DOJ filed a motion in a Federal District Court to force compliance. Google argued that the request imposed a burden, would compromise trade secrets, undermine customers' trust in Google, and have a chilling effect on search activities. In March 2006, the Court granted a reduced version of the first motion, ordering Google to provide a random listing of 50,000 URLs, but denied the second motion, namely, the request for search queries.
+    <br><br>
 
-While viewed from the perspective of user privacy this seems a good outcome, yet it does bring to light several disquieting points. First, from court documents we learn that AOL, Yahoo!, and Microsoft have complied with the government's request, though details are not given. Second, we must face the reality that logs of our online searches are in the hands of search companies and can be quite easily linked to our identities. Thirdly, it is clear we have little idea of, or say in, what can be done with these logs. While, in this instance, Google withheld such records from the Government, it would be foolish to count on this outcome in the future. </font></div>
+    While viewed from the perspective of user privacy this seems a good outcome, yet it does bring to light several disquieting points. First, from court documents we learn that AOL, Yahoo!, and Microsoft have complied with the government's request, though details are not given. Second, we must face the reality that logs of our online searches are in the hands of search companies and can be quite easily linked to our identities. Thirdly, it is clear we have little idea of, or say in, what can be done with these logs. While, in this instance, Google withheld such records from the Government, it would be foolish to count on this outcome in the future. 
+    </span>
+    <span lang="fr">
+    Public awareness of the vulnerability of searches to systematic surveillance and logging by search engine companies, was initially raised in the wake of a case, initiated August 2005, in which the United States Department of Justice (DOJ) issued a subpoena to Google for one week's worth of search query records (absent identifying information) and a random list of one million URLs from its Web index. This was cited as part of its defense of the constitutionality of the Child Online Protection Act (COPA). When Google refused, the DOJ filed a motion in a Federal District Court to force compliance. Google argued that the request imposed a burden, would compromise trade secrets, undermine customers' trust in Google, and have a chilling effect on search activities. In March 2006, the Court granted a reduced version of the first motion, ordering Google to provide a random listing of 50,000 URLs, but denied the second motion, namely, the request for search queries.
+    <br><br>
 
-<center><br><font face=verdana size=2 color=#00446D><b><i>TrackMeNot
-</i></b></font><font face=verdana size=2 color=#413F3F>is a work in progress -- we welcome feedback from the community!</center>
+    While viewed from the perspective of user privacy this seems a good outcome, yet it does bring to light several disquieting points. First, from court documents we learn that AOL, Yahoo!, and Microsoft have complied with the government's request, though details are not given. Second, we must face the reality that logs of our online searches are in the hands of search companies and can be quite easily linked to our identities. Thirdly, it is clear we have little idea of, or say in, what can be done with these logs. While, in this instance, Google withheld such records from the Government, it would be foolish to count on this outcome in the future. 
+    </span>
+    <span lang="zh">
+      2005年8月的一宗事件，讓公眾意識開始醒覺到用戶因搜尋服務供應商系統性地監控和記錄搜尋者的資料而處於弱勢：美國司法部（DOJ）向谷歌發出傳票，要求遞交一個星期的搜尋指令紀錄(不包含用戶識別資料)，和隨機列出網頁索引上一百萬個網址。這原被用作證明兒童在線保護法案（COPA）的合憲性。當谷歌公司拒絕有關要求，司法部在聯邦地區法院提交動議，要求強制執行。谷歌抗辯指，司法部的做法是增加負擔，提交資料會涉及商業秘密，並降低客戶對谷歌的信任，同時對搜尋活動形成寒蟬效應。 於2006年3月，法院批准經修訂的第一項動議，谷歌只需提供五萬個網址的列表，但第二項要求遞交搜尋指令紀錄的動議則被否決。
+      <br><br>
+      從用戶隱私的角度來看，這似乎是一個不錯的結果，但它亦點出幾項令人不安之處。首先，從法庭文件中我們知悉到，雖然細節欠奉，但美國在線、雅虎和微軟都答應了政府的要求。其次，我們必須面對的實情是，搜尋服務供應商完全掌控我們在線搜尋的紀錄，並且可輕易地鏈接到我們的身份。再者，明顯地我們並不知道如何應對。當谷歌面對政府的要求，仍然可以秘而不宣，若指望將來會有改變，可說是相當天真。 
+    </span>
+</font></div>
+
+<center><br><font face=verdana size=2 color=#413F3F>
+  <span lang="en">
+  <font face=verdana size=2 color=#00446D><b><i>TrackMeNot</i></b></font>
+  is a work in progress -- we welcome feedback from the community!
+  </span>
+  <span lang="zh">
+  <font face=verdana size=2 color=#00446D><b><i>TrackMeNot</i></b></font>
+  是一個試用版軟件 -- 歡迎各界給予意見！！
+  </span>
+</center>
+
+
             </td>
     </tr>
         <tr>
@@ -332,9 +421,11 @@ While viewed from the perspective of user privacy this seems a good outcome, yet
           <br><p>&nbsp;<p><a name="marx"></a>
           <font face=verdana size=1><br></font>
           <font face=verdana size=2>
-          <sup><small>1</small></sup> Footnote: See Gary T.  Marx "A Tack in the Shoe: Neutralizing and Resisting
+          <sup><small>1</small></sup> 
+          Footnote: See Gary T.  Marx "A Tack in the Shoe: Neutralizing and Resisting
           the New Surveillance," Journal of Social Issues, Vol 59, No. 2, 2003,
-          369-390). <p>
+          369-390). 
+          <p>
           <a href="" class=link>Back to Main Page</a>
           <p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
           <p>&nbsp;<p>&nbsp;<p>&nbsp;<p>&nbsp;
