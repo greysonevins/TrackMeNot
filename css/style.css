@@ -16,6 +16,10 @@
   font-weight: bold;
   font-size: 12px;
 }
+#languageSelect {
+  position: absolute;
+  top:10px;
+}
 a#firefoxbutton, a#firefoxbutton:visited {
     background-color: #BEE6A0;
     color:#4E47E6;

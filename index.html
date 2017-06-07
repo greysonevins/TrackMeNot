@@ -54,6 +54,12 @@ $(function() {
             <IMG SRC="images/TMN_logo.gif" WIDTH=234 HEIGHT=206 ALT=""></td>
         <td COLSPAN=2 bgcolor=#E6EAE2>
             <IMG SRC="images/TMN_header.gif" WIDTH=362 HEIGHT=52 ALT=""></td>
+        <td COLSPAN=2>
+            <div id="languageSelect">
+                <a class="link" href="index.html?en">EN</a> / <a class="link" href="index.html?fr">FR</a>
+                <!-- / <a href="index.html?ch">CH</a> -->
+            </div>
+        </td>
         <td ROWSPAN=12 bgcolor=#E6EAE2><!-- right margin -->
             <IMG SRC="images/spacer.gif" WIDTH=57 HEIGHT=928 ALT=""></td>
     </tr>
@@ -198,50 +204,64 @@ fill-rule="evenodd" d="M60.94 82.314L17 0h20.08l25.85 52.093c.397.927.86 1.888
     </tr>
     <tr>
         <td COLSPAN=3 bgcolor=#E6EAE2><div class=block><a name="how"></a>
-            <br><font face=verdana size=2 color=#00446D><b>How It Works</b><br>
-TrackMeNot</font><font face=verdana size=2 color=#413F3F> runs
-as a low-priority background process that periodically issues
-randomized search-queries to popular search engines, e.g., AOL, Yahoo!,
-Google, and Bing. It hides users' actual search trails in a cloud of 'ghost'
-queries, significantly increasing the difficulty of aggregating such data into
-accurate or identifying user profiles. TrackMeNot serves as a means of amplifying users'
- discontent with advertising networks that not only disregard privacy, but also facilitate
- the bulk surveillance agendas of corporate and government agencies, as documented recently
- in disclosures by Edward Snowden and others. To better simulate user behavior TrackMeNot
- uses a dynamic query mechanism to 'evolve' each client (uniquely) over time,
-  parsing the results of its searches for 'logical'
-future query terms with which to replace those already used.</p> <br>
+            <br><font face=verdana size=2 color=#00446D>
+            <b>
+            <span lang="en">How It Works</span>
+            <span lang="fr">Comment ça marche?</span>
+            </font></b>
+            <br><br/>
+            <font face=verdana size=2 color=#413F3F> 
+            <span lang="en"> <b><i><font face=verdana size=2 color=#00446D>TrackMeNot</font></i></b> runs as a low-priority background process that periodically issues
+            randomized search-queries to popular search engines, e.g., AOL, Yahoo!,
+            Google, and Bing. It hides users' actual search trails in a cloud of 'ghost'
+            queries, significantly increasing the difficulty of aggregating such data into
+            accurate or identifying user profiles. TrackMeNot serves as a means of amplifying users' discontent with advertising networks that not only disregard privacy, but also facilitate the bulk surveillance agendas of corporate and government agencies, as documented recently in disclosures by Edward Snowden and others. To better simulate user behavior TrackMeNot uses a dynamic query mechanism to 'evolve' each client (uniquely) over time, parsing the results of its searches for 'logical' future query terms with which to replace those already used.</span>
+            <span lang="fr"> <b><i><font face=verdana size=2 color=#00446D>TrackMeNot</font></i></b> tourne en tache de fond de votre navigateur pour lancer fréquemment des recherches sur les moteurs que vous choisissez (par exemple Yahoo!, Google ou Bing). TrackMeNot cache vos recherches dans un nuage de recherche "fantômes" afin de complexifier le profilage des utilisateurs et de le rendre inefficace. TMN sert aussi à signaler aux moteurs de recherche qui impact notre vie privée à des fins publicitaires mais aussi facilitent la surveillance de masse par les agences gouvernementales comme cela a été révélé récemment par Edward Snowden. Afin de simuler un comportement réaliste, TrackMeNot effectue des recherches dynamiques qui 'évoluent' indépendamment pour chaque client. en tache de fond de votre navigateur pour lancer fréquement des recherches sur les moteurs que vous choisissez ( par exemple Yahoo!, Google ou Bing). TrackMeNot cache vos recherches dans un nuage de recherche "phantomes" afin de complexifier le profilage des utilistaeurs et de le rendre inefficace. TMN sert aussi à signaler aux moteurs de recherche qui impact notre vie privée à des fins publicitaires mais aussi facilitent la surveillance de masse par les agences gouvernementales comme cela a été révélé récemment par Edward Snowden. Afin de simuler un comportement réaliste, TrackMeNot effectue des recherches dynamiques qui 'evoluent' indépendamment pour chaque client.
+            </span>
+<br><br>
         </div>
         </td>
     </tr>
     <tr>
         <td COLSPAN=3 bgcolor=#D6E0E0>
-            <blockquote><p><font face=verdana size=2
-color=#413F3F><br> TrackMeNot is user-installed and user-managed,
-residing wholly on users' system and functions without the need for 3rd-party servers or services.
-Placing users in full control is an essential feature of TrackMeNot, whose purpose is to protect against the unilateral policies set by search companies in their handling of our personal information.</p></blockquote>
+        <blockquote><p><font face=verdana size=2 color=#413F3F>
+        <span lang="en">TrackMeNot is user-installed and user-managed, residing wholly on users' system and functions without the need for 3rd-party servers or services.
+        Placing users in full control is an essential feature of TrackMeNot, whose purpose is to protect against the unilateral policies set by search companies in their handling of our personal information.</span>
+        <span lang="fr">TrackMeNot est complétement paramétrable par l'utilisateur (intégré à l'interface de Firefox en cliquant sur l'icône TMN). Une fois installé TMN s'exécute uniquement depuis votre navigateur sans nécessiter l'intervention de services tiers ou d'autres serveurs. Donner tous les contrôles à l'utilisateur est une des fonctionnalités primordiales de TMN.</span>
+        </p></blockquote>
         </td>
     </tr>
     <tr>
             <td COLSPAN=3 bgcolor=#E6EAE2><a name="why"></a><div class=block>
-                <br>&nbsp;<br><font face=verdana size=2 color=#00446D><b>Why
-We Created TMN</b><br>
-<font face=verdana size=2 color=#413F3F>The practice of logging user search
+                <br>&nbsp;<br><font face=verdana size=2 color=#00446D><b>
+                <span lang="en">Why We Created TMN</span>
+                <span lang="fr">Pourquoi nous avons développé TMN</span></b><br>
+<p>
+<font face=verdana size=2 color=#413F3F>
+<span lang="en">
+The practice of logging user search
 activities and creating individual search profiles - sometimes identifiable -
 has received attention in mainstream press, e.g. the recent front-page <a
 href="http://www.nytimes.com/2006/08/09/technology/09aol.html"
 target="_blank" class=link>New York Times article on AOL</a>'s release of collected data on individual searchers; also this front-page New York Times Business Section article describing the <a
-href="http://www.nytimes.com/2006/08/15/technology/15search.html" target="_blank" class=link>User-Profiling Practices of Yahoo!, AOL,  Bing & Google.</a></p><p>
-
-We are disturbed by the idea that search inquiries are systematically monitored and stored by corporations like AOL, Yahoo!, Google, etc. and may even be available to third parties. Because the Web has grown into such a crucial repository of information and our search behaviors profoundly reflect who we are, what we care about, and how we live our lives, there is reason to feel they should be off-limits to arbitrary surveillance. But what can be done?</p><p>
-
-Legal approaches -- urging legislators to support limits on access, or courts to extend Fourth Amendment protection -- might be effective, but would require orchestrated efforts by many parties. Appeals to search companies themselves seem even less hopeful as their interests, at least on the surface, are in direct conflict with such limits. Both, at best, are long term prospects.</p><p>
-
+href="http://www.nytimes.com/2006/08/15/technology/15search.html" target="_blank" class=link>User-Profiling Practices of Yahoo!, AOL,  Bing & Google.</a>
+<br><br>
+We are disturbed by the idea that search inquiries are systematically monitored and stored by corporations like AOL, Yahoo!, Google, etc. and may even be available to third parties. Because the Web has grown into such a crucial repository of information and our search behaviors profoundly reflect who we are, what we care about, and how we live our lives, there is reason to feel they should be off-limits to arbitrary surveillance. But what can be done?
+<br><br>
+Legal approaches -- urging legislators to support limits on access, or courts to extend Fourth Amendment protection -- might be effective, but would require orchestrated efforts by many parties. Appeals to search companies themselves seem even less hopeful as their interests, at least on the surface, are in direct conflict with such limits. Both, at best, are long term prospects.<br><br>
 We have developed TrackMeNot as an immediate solution, implemented and
 controlled by users themselves. It fits within the class of strategies,
 described by Gary T. Marx, whereby individuals resist surveillance by taking
 advantage of blind spots inherent in large-scale systems<sup><small><a
-href=#marx class=smLink>1</a></small></sup>. TrackMeNot may not radically alter the privacy landscape but helps to place a particularly sensitive arena of contemporary life back in the hands of individuals, where it belongs in any free society.</font></p>
+href=#marx class=smLink>1</a></small></sup>. TrackMeNot may not radically alter the privacy landscape but helps to place a particularly sensitive arena of contemporary life back in the hands of individuals, where it belongs in any free society.
+</span>
+<span lang="fr">
+La conservation des historiques de recherches et la création de profiles a commencé à soulever un problème de vie privée lorsque AOL a diffusé les historiques de recherches de 650.000 de ses utilisateurs en Aout 2006 <a href="http://www.nytimes.com/2006/08/09/technology/09aol.html" target="_blank" class="link"> comme l'a révélé le New York Times</a>
+Nous sommes préoccupé par les possibilité qu'offrent ces historiques de recherche qui demeurent disponibles aux moteurs de recherche tels que AOL, Yahoo!, Google, etc. et éventuellement à des tierces parties. Le Web a évolué en une énorme source d'information à laquelle nous accédons par l'intermédiaires de moteurs de recherches qui sont donc en mesure d'avoir une idée très précise de ceux qui nous intéresse. Que pouvons-nous faire<br><br>
+Les approches légales -- faire intervenir le législateur -- pourrait être efficace mais nécessiterait un effort conjoints de plusieurs parties.<br><br>
+Nous avons développé TrackMeNot comme une solution immédiate, configuré et contrôlé par les utilisateurs eux même. Cela correspond à une classe de stratégie définit par  Gary T. Marx, comme un mécanisme de résistance des individus tirant partie des vulnérabilités des systèmes <sup><small><a href="https://cs.nyu.edu/trackmenot/fr/#marx" class="smLink">1</a></small></sup>.
+</span>
+ </font></p>
             </div>
             </td>
     </tr>
