@@ -11,14 +11,13 @@
 <meta name="audience" content="All">
 <meta name="robots" content="INDEX,FOLLOW">
 <meta name="keywords" content="TrackMeNot, obfuscation, extension, privacy, surveillance, search, howe, nissenbaum, toubiana, cims, nyu, values, design">
+
 <link rel="stylesheet" href="css/style.css">
 <link rel="icon" type="image/png" href="images/tmn_icon.png" />
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
 <script type="text/javascript">
 $(function() {
-
   function selectLanguage(language) {
     $("[lang]").each(function() {
       if ($(this).attr("lang") === language) $(this).show();
@@ -27,22 +26,20 @@ $(function() {
   }
 
   // pick download button for browser: chrome and firefox, default=both
-  var isChrome = (!!window.chrome && !!window.chrome.webstore);
+  var isChrome = !!window.chrome && !!window.chrome.webstore;
   var isFirefox = typeof InstallTrigger !== "undefined";
 
-  if (isChrome)
-    document.getElementById("firefoxbutton").style.display = "none";
+  if (isChrome) document.getElementById("firefoxbutton").style.display = "none";
   else if (isFirefox)
     document.getElementById("chromebutton").style.display = "none";
 
   var lang = "en", userLang = navigator.language || navigator.userLanguage;
 
-  if (userLang === "fr" || location.href.endsWith('fr')) lang = "fr";
-  if (userLang.indexOf("zh") === 0 || location.href.endsWith('zh')) lang = "zh";
+  if (userLang === "fr" || location.href.endsWith("fr")) lang = "fr";
+  if (userLang.indexOf("zh") === 0 || location.href.endsWith("zh")) lang = "zh";
 
   selectLanguage(lang);
 });
-
 </script>
 </head>
 
@@ -158,9 +155,7 @@ $(function() {
             <span lang="en">FAQ</span>
             <span lang="fr">FAQ</span>
              <span lang="zh">常見問答</span>
-          </a><br>
-<!--a href="" onmouseover="this.href='mai' + 'lto:' + 'trackmenot.help' + '@' + 'gmail.com?subject=Re: TrackMeNot'" class=linkList>&nbsp;&nbsp;&diams;
-Contact Us</a><br--></b>
+          </a><br></b>
 
 <div id="sharing">
 
@@ -247,23 +242,23 @@ fill-rule="evenodd" d="M60.94 82.314L17 0h20.08l25.85 52.093c.397.927.86 1.888
     </tr>
     <tr>
         <td COLSPAN=3 bgcolor=#E6EAE2><div class=block><a name="how"></a>
-            <br><font face=verdana size=2 color=#00446D>
+            <br/><font face=verdana size=2 color=#00446D>
             <b>
-            <span lang="en">How It Works</span>
-            <span lang="fr">Comment ça marche?</span>
-            <span lang="zh">運作方式</span>
+            <span class="index-header" lang="en">How It Works</span>
+            <span class="index-header" lang="fr">Comment ça marche?</span>
+            <span class="index-header" lang="zh">運作方式</span>
             </font></b>
-            <br><br/>
+            <br/>
             <font face=verdana size=2 color=#413F3F>
-            <span lang="en"> <b><i><font face=verdana size=2 color=#00446D>TrackMeNot</font></i></b> runs as a low-priority background process that periodically issues
+            <span lang="en"> TrackMeNot runs as a low-priority background process that periodically issues
             randomized search-queries to popular search engines, e.g., AOL, Yahoo!,
             Google, and Bing. It hides users' actual search trails in a cloud of 'ghost'
             queries, significantly increasing the difficulty of aggregating such data into
             accurate or identifying user profiles. TrackMeNot serves as a means of amplifying users' discontent with advertising networks that not only disregard privacy, but also facilitate the bulk surveillance agendas of corporate and government agencies, as documented recently in disclosures by Edward Snowden and others. To better simulate user behavior TrackMeNot uses a dynamic query mechanism to 'evolve' each client (uniquely) over time, parsing the results of its searches for 'logical' future query terms with which to replace those already used.</span>
-            <span lang="fr"> <b><i><font face=verdana size=2 color=#00446D>TrackMeNot</font></i></b> tourne en tache de fond de votre navigateur pour lancer fréquemment des recherches sur les moteurs que vous choisissez (par exemple Yahoo!, Google ou Bing). TrackMeNot cache vos recherches dans un nuage de recherche "fantômes" afin de complexifier le profilage des utilisateurs et de le rendre inefficace. TMN sert aussi à signaler aux moteurs de recherche qui impact notre vie privée à des fins publicitaires mais aussi facilitent la surveillance de masse par les agences gouvernementales comme cela a été révélé récemment par Edward Snowden. Afin de simuler un comportement réaliste, TrackMeNot effectue des recherches dynamiques qui 'évoluent' indépendamment pour chaque client. en tache de fond de votre navigateur pour lancer fréquement des recherches sur les moteurs que vous choisissez ( par exemple Yahoo!, Google ou Bing). TrackMeNot cache vos recherches dans un nuage de recherche "phantomes" afin de complexifier le profilage des utilistaeurs et de le rendre inefficace. TMN sert aussi à signaler aux moteurs de recherche qui impact notre vie privée à des fins publicitaires mais aussi facilitent la surveillance de masse par les agences gouvernementales comme cela a été révélé récemment par Edward Snowden. Afin de simuler un comportement réaliste, TrackMeNot effectue des recherches dynamiques qui 'evoluent' indépendamment pour chaque client.
+            <span lang="fr"> TrackMeNot tourne en tache de fond de votre navigateur pour lancer fréquemment des recherches sur les moteurs que vous choisissez (par exemple Yahoo!, Google ou Bing). TrackMeNot cache vos recherches dans un nuage de recherche "fantômes" afin de complexifier le profilage des utilisateurs et de le rendre inefficace. TMN sert aussi à signaler aux moteurs de recherche qui impact notre vie privée à des fins publicitaires mais aussi facilitent la surveillance de masse par les agences gouvernementales comme cela a été révélé récemment par Edward Snowden. Afin de simuler un comportement réaliste, TrackMeNot effectue des recherches dynamiques qui 'évoluent' indépendamment pour chaque client. en tache de fond de votre navigateur pour lancer fréquement des recherches sur les moteurs que vous choisissez ( par exemple Yahoo!, Google ou Bing). TrackMeNot cache vos recherches dans un nuage de recherche "phantomes" afin de complexifier le profilage des utilistaeurs et de le rendre inefficace. TMN sert aussi à signaler aux moteurs de recherche qui impact notre vie privée à des fins publicitaires mais aussi facilitent la surveillance de masse par les agences gouvernementales comme cela a été révélé récemment par Edward Snowden. Afin de simuler un comportement réaliste, TrackMeNot effectue des recherches dynamiques qui 'evoluent' indépendamment pour chaque client.
             </span>
-            <span lang="zh"><b><i><font face=verdana size=2 color=#00446D>TrackMeNot</font></i></b> 在火狐(Firefox)和谷歌瀏覽器(Chrome)運行時，會以低優的後台進程向熱門的搜尋引擎，例如美國在線(AOL)、雅虎(Yahoo)、谷歌(Google)、和必應(Bing) 定期發出多個隨機的搜尋指令，以隱藏使用者真實的搜尋路徑。有了幻影指令的保護，對方要將搜集到的數據準確地轉化或組合成為用戶檔案的難度將會大大提升。TMN要道出用戶對廣告網絡的不滿，不但因它們無視私隱，廣告網絡更為企業和政府等機構的大規模監控行動提供了的便利；這些都記錄在斯諾登(Edward Snowden)和其他人近期揭露的資料中。為了提高模擬搜尋指令的像真度，TrackMeNot使用動態指令機制，每個客戶都會配備不斷演進的搜尋指令，同時按邏輯推斷合適的搜尋指令，來取代已用過的搜尋指令。</span>
-<br><br>
+            <span lang="zh">TrackMeNot 在火狐(Firefox)和谷歌瀏覽器(Chrome)運行時，會以低優的後台進程向熱門的搜尋引擎，例如美國在線(AOL)、雅虎(Yahoo)、谷歌(Google)、和必應(Bing) 定期發出多個隨機的搜尋指令，以隱藏使用者真實的搜尋路徑。有了幻影指令的保護，對方要將搜集到的數據準確地轉化或組合成為用戶檔案的難度將會大大提升。TMN要道出用戶對廣告網絡的不滿，不但因它們無視私隱，廣告網絡更為企業和政府等機構的大規模監控行動提供了的便利；這些都記錄在斯諾登(Edward Snowden)和其他人近期揭露的資料中。為了提高模擬搜尋指令的像真度，TrackMeNot使用動態指令機制，每個客戶都會配備不斷演進的搜尋指令，同時按邏輯推斷合適的搜尋指令，來取代已用過的搜尋指令。</span>
+            <br/><br>
         </div>
         </td>
     </tr>
@@ -282,12 +277,11 @@ fill-rule="evenodd" d="M60.94 82.314L17 0h20.08l25.85 52.093c.397.927.86 1.888
     </tr>
     <tr>
             <td COLSPAN=3 bgcolor=#E6EAE2><a name="why"></a><div class=block>
-                <br>&nbsp;<br><font face=verdana size=2 color=#00446D><b>
-                <span lang="en">Why We Created TMN</span>
-                <span lang="fr">Pourquoi nous avons développé TMN</span>
-                <span lang="zh">我們為甚麼要創建TMN</span>
+                <br><font face=verdana size=2 color=#00446D><b>
+                <span class="index-header" lang="en">Why We Created TMN</span>
+                <span class="index-header" lang="fr">Pourquoi nous avons développé TMN</span>
+                <span class="index-header" lang="zh">我們為甚麼要創建TMN</span>
               </b><br>
-<p>
 <font face=verdana size=2 color=#413F3F>
 <span lang="en">
 The practice of logging user search
@@ -328,11 +322,11 @@ href=#marx class=smLink>1</a></small></sup>。 TrackMeNot未必可以從根本�
     </tr>
     <tr>
             <td COLSPAN=3 bgcolor=#E6EAE2><div class=block><a name="bg"></a>
-                <br><font face=verdana size=2 color=#00446D><b>
-                <span lang="en">Background</span>
-                <span lang="fr">Background</span>
-                <span lang="zh">背景</span>
-              </b></font><br></br>
+                <font face=verdana size=2 color=#00446D><b>
+                <span class="index-header" lang="en">Background</span>
+                <span class="index-header" lang="fr">Background</span>
+                <span class="index-header" lang="zh">背景</span>
+              </b></font></br>
    <font face=verdana size=2 color=#413F3F>
    <span lang="en">
     Public awareness of the vulnerability of searches to systematic surveillance and logging by search engine companies, was initially raised in the wake of a case, initiated August 2005, in which the United States Department of Justice (DOJ) issued a subpoena to Google for one week's worth of search query records (absent identifying information) and a random list of one million URLs from its Web index. This was cited as part of its defense of the constitutionality of the Child Online Protection Act (COPA). When Google refused, the DOJ filed a motion in a Federal District Court to force compliance. Google argued that the request imposed a burden, would compromise trade secrets, undermine customers' trust in Google, and have a chilling effect on search activities. In March 2006, the Court granted a reduced version of the first motion, ordering Google to provide a random listing of 50,000 URLs, but denied the second motion, namely, the request for search queries.

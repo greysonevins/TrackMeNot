@@ -9,6 +9,9 @@
 #sharing {
   margin-left: 0.8em;
 }
+.index-header {
+  line-height: 28px;
+}
 .link {
   color: #006ec4;
   text-decoration: none;
