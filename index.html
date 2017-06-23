@@ -33,10 +33,12 @@ $(function() {
   else if (isFirefox)
     document.getElementById("chromebutton").style.display = "none";
 
-  var lang = "en", userLang = navigator.language || navigator.userLanguage;
+   var lang = "en", userLang = navigator.language || navigator.userLanguage, 
+       displayLang = location.search.length > 0 ? location.search : userLang;
 
-  if (userLang === "fr" || location.href.endsWith("fr")) lang = "fr";
-  if (userLang.indexOf("zh") === 0 || location.href.endsWith("zh")) lang = "zh";
+  if (displayLang.endsWith('en')) lang = "en";
+  else if (displayLang.endsWith('fr')) lang = "fr";
+  else if (displayLang.indexOf('zh') > -1) lang = "zh";
 
   selectLanguage(lang);
 });
